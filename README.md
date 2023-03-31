@@ -1,2 +1,3 @@
 # MyGymBro
-Your very own PR tracker. 
+Your very own PR tracker.   
+Frontend - Foltut Daniel  

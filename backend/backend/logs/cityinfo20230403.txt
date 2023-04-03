@@ -1,0 +1,300 @@
+2023-04-03 18:43:05.786 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-03 18:43:06.440 +03:00 [DBG] Entity Framework Core 7.0.4 initialized 'DbInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.4' with options: None
+2023-04-03 18:43:06.603 +03:00 [DBG] 'DbInfoContext' disposed.
+2023-04-03 18:43:10.863 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-04-03 18:43:11.421 +03:00 [DBG] Entity Framework Core 7.0.4 initialized 'DbInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.4' with options: None
+2023-04-03 18:43:11.435 +03:00 [DBG] Creating DbConnection.
+2023-04-03 18:43:11.455 +03:00 [DBG] Created DbConnection. (17ms).
+2023-04-03 18:43:11.459 +03:00 [DBG] Migrating using database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:11.463 +03:00 [DBG] Creating DbConnection.
+2023-04-03 18:43:11.464 +03:00 [DBG] Created DbConnection. (0ms).
+2023-04-03 18:43:11.465 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:11.471 +03:00 [DBG] An error occurred using the connection to database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:11.473 +03:00 [DBG] Disposing connection to database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:11.478 +03:00 [DBG] Disposed connection to database 'main' on server 'MyGymBroDB.db' (0ms).
+2023-04-03 18:43:11.478 +03:00 [DBG] Creating DbConnection.
+2023-04-03 18:43:11.478 +03:00 [DBG] Created DbConnection. (0ms).
+2023-04-03 18:43:11.478 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:11.478 +03:00 [DBG] An error occurred using the connection to database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:11.478 +03:00 [DBG] Disposing connection to database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:11.478 +03:00 [DBG] Disposed connection to database 'main' on server 'MyGymBroDB.db' (0ms).
+2023-04-03 18:43:11.479 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:11.483 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-04-03 18:43:11.492 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-03 18:43:11.497 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (5ms).
+2023-04-03 18:43:11.498 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (9ms).
+2023-04-03 18:43:11.502 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-04-03 18:43:11.519 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-04-03 18:43:11.521 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-04-03 18:43:11.523 +03:00 [DBG] Closed connection to database 'main' on server 'MyGymBroDB.db' (3ms).
+2023-04-03 18:43:11.594 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-03 18:43:11.594 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:11.594 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:11.594 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:11.594 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-04-03 18:43:11.594 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2023-04-03 18:43:11.599 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2023-04-03 18:43:11.599 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-04-03 18:43:11.599 +03:00 [DBG] Closed connection to database 'main' on server 'MyGymBroDB.db' (0ms).
+2023-04-03 18:43:11.600 +03:00 [DBG] Creating DbConnection.
+2023-04-03 18:43:11.600 +03:00 [DBG] Created DbConnection. (0ms).
+2023-04-03 18:43:11.600 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:11.601 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-04-03 18:43:11.602 +03:00 [DBG] Disposing connection to database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:11.602 +03:00 [DBG] Disposed connection to database 'main' on server 'MyGymBroDB.db' (0ms).
+2023-04-03 18:43:11.606 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-04-03 18:43:11.606 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-04-03 18:43:11.606 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-04-03 18:43:11.606 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:11.606 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-04-03 18:43:11.607 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-03 18:43:11.608 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-04-03 18:43:11.608 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-04-03 18:43:11.608 +03:00 [DBG] Closed connection to database 'main' on server 'MyGymBroDB.db' (0ms).
+2023-04-03 18:43:11.609 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-04-03 18:43:11.609 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-04-03 18:43:11.609 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-04-03 18:43:11.609 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:11.609 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-04-03 18:43:11.838 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-04-03 18:43:11.839 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-04-03 18:43:11.840 +03:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-04-03 18:43:11.840 +03:00 [DBG] A data reader for 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db' is being disposed after spending 1ms reading results.
+2023-04-03 18:43:11.840 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-04-03 18:43:11.840 +03:00 [DBG] Closed connection to database 'main' on server 'MyGymBroDB.db' (0ms).
+2023-04-03 18:43:11.849 +03:00 [INF] Applying migration '20230403154306_InitialCreate'.
+2023-04-03 18:43:11.876 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:11.876 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-04-03 18:43:11.877 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-04-03 18:43:11.879 +03:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-04-03 18:43:11.880 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-03 18:43:11.880 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:11.880 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:11.880 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Exercise" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Exercise" PRIMARY KEY AUTOINCREMENT,
+    "Category" TEXT NOT NULL,
+    "Name" TEXT NOT NULL,
+    "ImageString" TEXT NOT NULL
+);
+2023-04-03 18:43:11.880 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Exercise" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Exercise" PRIMARY KEY AUTOINCREMENT,
+    "Category" TEXT NOT NULL,
+    "Name" TEXT NOT NULL,
+    "ImageString" TEXT NOT NULL
+);
+2023-04-03 18:43:11.880 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-03 18:43:11.880 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:11.881 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:11.881 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Users" PRIMARY KEY AUTOINCREMENT,
+    "Username" TEXT NOT NULL,
+    "Password" TEXT NOT NULL,
+    "Email" TEXT NOT NULL
+);
+2023-04-03 18:43:11.881 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Users" PRIMARY KEY AUTOINCREMENT,
+    "Username" TEXT NOT NULL,
+    "Password" TEXT NOT NULL,
+    "Email" TEXT NOT NULL
+);
+2023-04-03 18:43:11.881 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-03 18:43:11.881 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:11.881 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:11.881 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "UserDatas" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_UserDatas" PRIMARY KEY AUTOINCREMENT,
+    "Weight" REAL NOT NULL,
+    "Height" REAL NOT NULL,
+    "TargetWeight" REAL NOT NULL,
+    "UserId" INTEGER NULL,
+    CONSTRAINT "FK_UserDatas_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id")
+);
+2023-04-03 18:43:11.881 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "UserDatas" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_UserDatas" PRIMARY KEY AUTOINCREMENT,
+    "Weight" REAL NOT NULL,
+    "Height" REAL NOT NULL,
+    "TargetWeight" REAL NOT NULL,
+    "UserId" INTEGER NULL,
+    CONSTRAINT "FK_UserDatas_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id")
+);
+2023-04-03 18:43:11.881 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-03 18:43:11.881 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:11.881 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:13.356 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Workout" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Workout" PRIMARY KEY AUTOINCREMENT,
+    "WorkoutDuration" TEXT NOT NULL,
+    "date" Date NOT NULL,
+    "UserDataId" INTEGER NULL,
+    CONSTRAINT "FK_Workout_UserDatas_UserDataId" FOREIGN KEY ("UserDataId") REFERENCES "UserDatas" ("Id")
+);
+2023-04-03 18:43:13.356 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Workout" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Workout" PRIMARY KEY AUTOINCREMENT,
+    "WorkoutDuration" TEXT NOT NULL,
+    "date" Date NOT NULL,
+    "UserDataId" INTEGER NULL,
+    CONSTRAINT "FK_Workout_UserDatas_UserDataId" FOREIGN KEY ("UserDataId") REFERENCES "UserDatas" ("Id")
+);
+2023-04-03 18:43:13.356 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-03 18:43:13.356 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:13.356 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:13.357 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "ExerciseWorkoutRel" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_ExerciseWorkoutRel" PRIMARY KEY AUTOINCREMENT,
+    "NumberOfSets" REAL NOT NULL,
+    "NumberOfReps" REAL NOT NULL,
+    "Weight" REAL NOT NULL,
+    "ExerciseId" INTEGER NULL,
+    "WorkoutId" INTEGER NULL,
+    CONSTRAINT "FK_ExerciseWorkoutRel_Exercise_ExerciseId" FOREIGN KEY ("ExerciseId") REFERENCES "Exercise" ("Id"),
+    CONSTRAINT "FK_ExerciseWorkoutRel_Workout_WorkoutId" FOREIGN KEY ("WorkoutId") REFERENCES "Workout" ("Id")
+);
+2023-04-03 18:43:13.357 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "ExerciseWorkoutRel" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_ExerciseWorkoutRel" PRIMARY KEY AUTOINCREMENT,
+    "NumberOfSets" REAL NOT NULL,
+    "NumberOfReps" REAL NOT NULL,
+    "Weight" REAL NOT NULL,
+    "ExerciseId" INTEGER NULL,
+    "WorkoutId" INTEGER NULL,
+    CONSTRAINT "FK_ExerciseWorkoutRel_Exercise_ExerciseId" FOREIGN KEY ("ExerciseId") REFERENCES "Exercise" ("Id"),
+    CONSTRAINT "FK_ExerciseWorkoutRel_Workout_WorkoutId" FOREIGN KEY ("WorkoutId") REFERENCES "Workout" ("Id")
+);
+2023-04-03 18:43:13.357 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-03 18:43:13.357 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:13.357 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:13.357 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_ExerciseWorkoutRel_ExerciseId" ON "ExerciseWorkoutRel" ("ExerciseId");
+2023-04-03 18:43:13.357 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_ExerciseWorkoutRel_ExerciseId" ON "ExerciseWorkoutRel" ("ExerciseId");
+2023-04-03 18:43:13.357 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-03 18:43:13.357 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:13.357 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:13.357 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_ExerciseWorkoutRel_WorkoutId" ON "ExerciseWorkoutRel" ("WorkoutId");
+2023-04-03 18:43:13.357 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_ExerciseWorkoutRel_WorkoutId" ON "ExerciseWorkoutRel" ("WorkoutId");
+2023-04-03 18:43:13.357 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-03 18:43:13.357 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:13.357 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:13.357 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_UserDatas_UserId" ON "UserDatas" ("UserId");
+2023-04-03 18:43:13.357 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_UserDatas_UserId" ON "UserDatas" ("UserId");
+2023-04-03 18:43:13.357 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-03 18:43:13.357 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:13.357 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:15.657 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Workout_UserDataId" ON "Workout" ("UserDataId");
+2023-04-03 18:43:15.657 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Workout_UserDataId" ON "Workout" ("UserDataId");
+2023-04-03 18:43:15.657 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-04-03 18:43:15.657 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:15.657 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-04-03 18:43:15.657 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230403154306_InitialCreate', '7.0.4');
+2023-04-03 18:43:15.657 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230403154306_InitialCreate', '7.0.4');
+2023-04-03 18:43:15.658 +03:00 [DBG] Committing transaction.
+2023-04-03 18:43:15.666 +03:00 [DBG] Committed transaction.
+2023-04-03 18:43:15.667 +03:00 [DBG] Disposing transaction.
+2023-04-03 18:43:15.667 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-04-03 18:43:15.667 +03:00 [DBG] Closed connection to database 'main' on server 'MyGymBroDB.db' (0ms).
+2023-04-03 18:43:15.668 +03:00 [DBG] 'DbInfoContext' disposed.
+2023-04-03 18:43:15.668 +03:00 [DBG] Disposing connection to database 'main' on server 'MyGymBroDB.db'.
+2023-04-03 18:43:15.668 +03:00 [DBG] Disposed connection to database 'main' on server 'MyGymBroDB.db' (0ms).
+2023-04-03 18:44:32.742 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-04-03 18:44:32.981 +03:00 [DBG] Hosting starting
+2023-04-03 18:44:33.188 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F5D6599CBBA12DF6A635296EEC65EA1CF2648524)
+2023-04-03 18:44:33.232 +03:00 [INF] Now listening on: https://localhost:7220
+2023-04-03 18:44:33.233 +03:00 [INF] Now listening on: http://localhost:5122
+2023-04-03 18:44:33.234 +03:00 [DBG] Loaded hosting startup assembly backend
+2023-04-03 18:44:33.235 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-04-03 18:44:33.236 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-04-03 18:44:33.238 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-03 18:44:33.239 +03:00 [INF] Hosting environment: Development
+2023-04-03 18:44:33.240 +03:00 [INF] Content root path: C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\
+2023-04-03 18:44:33.241 +03:00 [DBG] Hosting started
+2023-04-03 18:44:33.345 +03:00 [DBG] Connection id "0HMPKB992PN29" accepted.
+2023-04-03 18:44:33.345 +03:00 [DBG] Connection id "0HMPKB992PN2A" accepted.
+2023-04-03 18:44:33.348 +03:00 [DBG] Connection id "0HMPKB992PN29" started.
+2023-04-03 18:44:33.349 +03:00 [DBG] Connection id "0HMPKB992PN2A" started.
+2023-04-03 18:44:33.390 +03:00 [DBG] Connection id "0HMPKB992PN2A" received FIN.
+2023-04-03 18:44:33.390 +03:00 [DBG] Connection id "0HMPKB992PN29" received FIN.
+2023-04-03 18:44:33.408 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-04-03 18:44:33.408 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-04-03 18:44:33.478 +03:00 [DBG] Connection id "0HMPKB992PN2A" stopped.
+2023-04-03 18:44:33.478 +03:00 [DBG] Connection id "0HMPKB992PN29" stopped.
+2023-04-03 18:44:33.481 +03:00 [DBG] Connection id "0HMPKB992PN29" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-04-03 18:44:33.481 +03:00 [DBG] Connection id "0HMPKB992PN2A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-04-03 18:44:34.011 +03:00 [DBG] Connection id "0HMPKB992PN2B" accepted.
+2023-04-03 18:44:34.012 +03:00 [DBG] Connection id "0HMPKB992PN2B" started.
+2023-04-03 18:44:34.013 +03:00 [DBG] Connection id "0HMPKB992PN2C" accepted.
+2023-04-03 18:44:34.015 +03:00 [DBG] Connection id "0HMPKB992PN2C" started.
+2023-04-03 18:44:34.043 +03:00 [DBG] Connection id "0HMPKB992PN2C" received FIN.
+2023-04-03 18:44:34.056 +03:00 [DBG] Connection 0HMPKB992PN2C established using the following protocol: "Tls13"
+2023-04-03 18:44:34.056 +03:00 [DBG] Connection 0HMPKB992PN2B established using the following protocol: "Tls13"
+2023-04-03 18:44:34.080 +03:00 [DBG] Connection id "0HMPKB992PN2C" is closed. The last processed stream ID was 0.
+2023-04-03 18:44:34.083 +03:00 [DBG] Connection id "0HMPKB992PN2C" sending FIN because: "The client closed the connection."
+2023-04-03 18:44:34.086 +03:00 [DBG] Connection id "0HMPKB992PN2C" stopped.
+2023-04-03 18:44:34.124 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/swagger - -
+2023-04-03 18:44:34.168 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-04-03 18:44:34.230 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/swagger - - - 301 0 - 110.2634ms
+2023-04-03 18:44:34.233 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/swagger/index.html - -
+2023-04-03 18:44:34.530 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-04-03 18:44:34.538 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-04-03 18:44:34.541 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/swagger/index.html - - - 200 - text/html;charset=utf-8 308.1302ms
+2023-04-03 18:44:34.558 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/swagger/swagger-ui.css - -
+2023-04-03 18:44:34.565 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/swagger/swagger-ui-bundle.js - -
+2023-04-03 18:44:34.566 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/swagger/swagger-ui-standalone-preset.js - -
+2023-04-03 18:44:34.566 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 18:44:34.619 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 53.4327ms
+2023-04-03 18:44:34.639 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-04-03 18:44:34.639 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-04-03 18:44:34.646 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-04-03 18:44:34.647 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/swagger/swagger-ui.css - - - 200 143632 text/css 88.6877ms
+2023-04-03 18:44:34.649 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 83.1623ms
+2023-04-03 18:44:34.649 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 83.8026ms
+2023-04-03 18:44:34.660 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_vs/browserLink - -
+2023-04-03 18:44:34.717 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.2668ms
+2023-04-03 18:44:34.797 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/swagger/favicon-32x32.png - -
+2023-04-03 18:44:34.798 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-04-03 18:44:34.800 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/swagger/favicon-32x32.png - - - 200 628 image/png 2.5245ms
+2023-04-03 18:44:34.844 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/swagger/v1/swagger.json - -
+2023-04-03 18:44:34.945 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.4249ms

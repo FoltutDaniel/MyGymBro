@@ -8,14 +8,22 @@
         <i class="pi pi-bars"></i>
     </button>
 
-    <button #topbarmenubutton class="p-link layout-topbar-menu-button layout-topbar-button" (click)="layoutService.showProfileSidebar()">
+    <button #topbarmenubutton class="p-link layout-topbar-menu-button layout-topbar-button"
+            (click)="layoutService.showProfileSidebar()">
         <i class="pi pi-ellipsis-v"></i>
     </button>
 
-    <div #topbarmenu class="layout-topbar-menu" [ngClass]="{'layout-topbar-menu-mobile-active': layoutService.state.profileSidebarVisible}">
-        <button class="p-link layout-topbar-button">
+    <div #topbarmenu class="layout-topbar-menu">
+        <button (click)="op.toggle($event)" class="p-link layout-topbar-button">
             <i class="pi pi-user"></i>
             <span>Profile</span>
         </button>
+        <p-overlayPanel #op>
+            <div style="display: flex; flex-direction: column; align-items: center; row-gap: 1rem;">
+                <p>Hello, User!</p>
+                <p-button routerLink="/uikit/input" label="Account Data"></p-button>
+                <p-button routerLink="/landing" label="Sign out"></p-button>
+            </div>
+        </p-overlayPanel>
     </div>
 </div>

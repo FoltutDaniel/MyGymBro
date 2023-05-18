@@ -18,10 +18,10 @@ export class AppMenuComponent implements OnInit {
             {
                 label: '',
                 items: [
-                    {label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['/']},
-                    {label: 'Workouts', icon: 'pi pi-fw pi-history', routerLink: ['/']},
-                    {label: 'Exercises', icon: 'pi pi-fw pi-heart', routerLink: ['/']},
-                    {label: 'Settings', icon: 'pi pi-fw pi-cog', routerLink: ['/']}
+                    {label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['/uikit/formlayout']},
+                    {label: 'Workouts', icon: 'pi pi-fw pi-history', routerLink: ['/uikit/button']},
+                    {label: 'Exercises', icon: 'pi pi-fw pi-heart', routerLink: ['/uikit/charts']},
+                    {label: 'Settings', icon: 'pi pi-fw pi-cog', routerLink: ['/uikit/']}
                 ]
             }
         ];

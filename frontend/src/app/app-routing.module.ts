@@ -17,7 +17,10 @@ import {AppLayoutComponent} from "./layout/app.layout.component";
                 path: 'notfound', component: NotfoundComponent
             },
             {
-                path: 'main', component: AppLayoutComponent,
+                path: '', component: AppLayoutComponent,
+                children: [
+                    { path: 'uikit', loadChildren: () => import('./demo/components/uikit/uikit.module').then(m => m.UIkitModule) }
+                ]
             },
             {path: '**', redirectTo: '/landing'},
         ], {scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload'})

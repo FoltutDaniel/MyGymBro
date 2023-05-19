@@ -77,24 +77,12 @@ export class LayoutService {
         }
     }
 
-    showConfigSidebar() {
-        this.state.configSidebarVisible = true;
-    }
-
     isOverlay() {
         return this.config.menuMode === 'overlay';
     }
 
     isDesktop() {
         return window.innerWidth > 991;
-    }
-
-    isMobile() {
-        return !this.isDesktop();
-    }
-
-    onConfigUpdate() {
-        this.configUpdate.next(this.config);
     }
 
 }

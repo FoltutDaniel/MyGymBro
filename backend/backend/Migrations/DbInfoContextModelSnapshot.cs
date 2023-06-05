@@ -72,7 +72,7 @@ namespace backend.Migrations
 
             modelBuilder.Entity("backend.Entities.User", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -91,7 +91,7 @@ namespace backend.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
-                    b.HasKey("Id");
+                    b.HasKey("UserId");
 
                     b.ToTable("Users");
                 });
@@ -108,7 +108,7 @@ namespace backend.Migrations
                     b.Property<float>("TargetWeight")
                         .HasColumnType("REAL");
 
-                    b.Property<int?>("UserId")
+                    b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
 
                     b.Property<float>("Weight")
@@ -163,8 +163,10 @@ namespace backend.Migrations
             modelBuilder.Entity("backend.Entities.UserData", b =>
                 {
                     b.HasOne("backend.Entities.User", "User")
-                        .WithOne("UerData")
-                        .HasForeignKey("backend.Entities.UserData", "UserId");
+                        .WithOne("UserData")
+                        .HasForeignKey("backend.Entities.UserData", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("User");
                 });
@@ -185,7 +187,8 @@ namespace backend.Migrations
 
             modelBuilder.Entity("backend.Entities.User", b =>
                 {
-                    b.Navigation("UerData");
+                    b.Navigation("UserData")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("backend.Entities.UserData", b =>

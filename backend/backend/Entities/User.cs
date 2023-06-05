@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
 
 namespace backend.Entities
 {
@@ -7,7 +8,7 @@ namespace backend.Entities
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public int UserId { get; set; }
 
         [Required]
         [MaxLength(50)]
@@ -21,7 +22,8 @@ namespace backend.Entities
         [MaxLength(50)]
         public string Email { get; set; } = string.Empty;
 
-        public UserData? UerData { get; set; }
+        [JsonIgnore]
+        public  UserData UserData { get; set; }
 
 
     }

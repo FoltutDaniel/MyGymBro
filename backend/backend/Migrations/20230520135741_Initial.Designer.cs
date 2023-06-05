@@ -11,8 +11,8 @@ using backend.DbContexts;
 namespace backend.Migrations
 {
     [DbContext(typeof(DbInfoContext))]
-    [Migration("20230403154306_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230520135741_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -75,7 +75,7 @@ namespace backend.Migrations
 
             modelBuilder.Entity("backend.Entities.User", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -94,7 +94,7 @@ namespace backend.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
-                    b.HasKey("Id");
+                    b.HasKey("UserId");
 
                     b.ToTable("Users");
                 });
@@ -111,7 +111,7 @@ namespace backend.Migrations
                     b.Property<float>("TargetWeight")
                         .HasColumnType("REAL");
 
-                    b.Property<int?>("UserId")
+                    b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
 
                     b.Property<float>("Weight")
@@ -166,8 +166,10 @@ namespace backend.Migrations
             modelBuilder.Entity("backend.Entities.UserData", b =>
                 {
                     b.HasOne("backend.Entities.User", "User")
-                        .WithOne("UerData")
-                        .HasForeignKey("backend.Entities.UserData", "UserId");
+                        .WithOne("UserData")
+                        .HasForeignKey("backend.Entities.UserData", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("User");
                 });
@@ -188,7 +190,7 @@ namespace backend.Migrations
 
             modelBuilder.Entity("backend.Entities.User", b =>
                 {
-                    b.Navigation("UerData");
+                    b.Navigation("UserData");
                 });
 
             modelBuilder.Entity("backend.Entities.UserData", b =>

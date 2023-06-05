@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
 
 namespace backend.Entities
 {
@@ -11,9 +12,10 @@ namespace backend.Entities
         public float Weight { get; set; }
         public float Height { get; set; }
         public float TargetWeight { get; set; }
+        public int UserId { get; set; }
 
-        [ForeignKey("UserId")]
-        public User? User { get; set; }
+        [JsonIgnore]
+        public virtual User? User { get; set; }
 
 
         public ICollection<Workout> Workouts { get; set; }

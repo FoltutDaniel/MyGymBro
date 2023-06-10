@@ -2,20 +2,25 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {User} from "../model/user.model";
 import {Observable} from "rxjs";
+import {Router} from "@angular/router";
 
 @Injectable({
     providedIn: 'root'
 })
 export class AuthService {
-    private url = 'http://localhost:8080/auth';
-    constructor(private httpClient: HttpClient) {
+    private url = 'https://localhost:7220/auth';
+    constructor(private httpClient: HttpClient, private router: Router) {
     }
 
-    login(user: User): Observable<any>{
-        return this.httpClient.post<any>(this.url + '/login', user);
+    login(user: any): any{
+        return this.httpClient.post<any>(this.url + '/login', user).subscribe(data =>{
+            sessionStorage.setItem('username', data.user);
+            sessionStorage.setItem('token', data.token);
+            this.router.navigateByUrl('');
+        });
     }
 
-    register(user: User): Observable<any>{
+    register(user: any): Observable<any>{
         return this.httpClient.post<any>(this.url + '/register', user);
     }
 }

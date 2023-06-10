@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { LayoutService } from 'src/app/layout/service/app.layout.service';
+import {AuthService} from "../../../services/auth.service";
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-register',
@@ -17,7 +19,15 @@ export class RegisterComponent {
 
     valCheck: string[] = ['remember'];
 
+    username!: string;
+    email!:string;
     password!: string;
 
-    constructor(public layoutService: LayoutService) { }
+    constructor(public layoutService: LayoutService, private authService: AuthService, private router: Router) { }
+
+    register(){
+        this.authService.register({userName: this.username, password: this.password, email: this.email}).subscribe(() =>{
+            this.router.navigateByUrl('auth/login');
+        })
+    }
 }

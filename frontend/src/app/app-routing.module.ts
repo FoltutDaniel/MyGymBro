@@ -7,6 +7,7 @@ import {ExercisesComponent} from "./pages/main-layout/exercises/exercises.compon
 import {WorkoutsComponent} from "./pages/main-layout/workouts/workouts.component";
 import {HomeComponent} from "./pages/main-layout/home/home.component";
 import {UserDataComponent} from "./pages/main-layout/user-data/user-data.component";
+import {AuthGuard} from "./pages/auth/guards/auth.guard";
 
 @NgModule({
     imports: [
@@ -22,7 +23,7 @@ import {UserDataComponent} from "./pages/main-layout/user-data/user-data.compone
                 path: 'notfound', component: NotfoundComponent
             },
             {
-                path: '', component: AppLayoutComponent,
+                path: '', component: AppLayoutComponent, canActivate: [AuthGuard],
                 children: [
                     {path: 'account-data', component: AccountDataComponent},
                     {path: 'exercises', component: ExercisesComponent},

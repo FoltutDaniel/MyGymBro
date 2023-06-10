@@ -7,11 +7,11 @@ import {Exercise} from "../model/exercise.model";
   providedIn: 'root'
 })
 export class ExerciseService {
-    private url = 'http://localhost:8080/exercise';
+    private url = 'https://localhost:7220/exercise';
     constructor(private httpClient: HttpClient) {
     }
 
     getAllExercises(): Observable<Exercise[]>{
-        return this.httpClient.get<Exercise[]>(this.url+'getAll');
+        return this.httpClient.get<Exercise[]>(this.url+'/getAll');
     }
 }

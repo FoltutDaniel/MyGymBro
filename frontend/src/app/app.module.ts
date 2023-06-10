@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import {CommonModule, HashLocationStrategy, LocationStrategy} from '@angular/common';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {AppLayoutModule} from './layout/app.layout.module';
@@ -11,6 +11,11 @@ import {HomeComponent} from "./pages/main-layout/home/home.component";
 import {UserDataComponent} from "./pages/main-layout/user-data/user-data.component";
 import {AuthInterceptor} from "./pages/auth/interceptors/auth.interceptor";
 import {HTTP_INTERCEPTORS} from "@angular/common/http";
+import {ButtonModule} from "primeng/button";
+import {DialogModule} from "primeng/dialog";
+import {DropdownModule} from "primeng/dropdown";
+import {InputNumberModule} from "primeng/inputnumber";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
     declarations: [
@@ -19,7 +24,13 @@ import {HTTP_INTERCEPTORS} from "@angular/common/http";
     ],
     imports: [
         AppRoutingModule,
-        AppLayoutModule
+        AppLayoutModule,
+        CommonModule,
+        ButtonModule,
+        DialogModule,
+        DropdownModule,
+        InputNumberModule,
+        FormsModule
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

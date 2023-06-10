@@ -9,15 +9,16 @@ import {WorkoutExercise} from "../model/workout-exercise.model";
     providedIn: 'root'
 })
 export class WorkoutService {
-    private url = 'http://localhost:8080/workout';
+    private url = 'https://localhost:7220/workout';
     constructor(private httpClient: HttpClient) {
     }
 
-    startWorkout(workout: Workout): Observable<Workout>{
-        return this.httpClient.post<Workout>(this.url+'/start-workout', workout);
+    startWorkout(workout: any): Promise<Workout>{
+        let userId = sessionStorage.getItem('id');
+        return this.httpClient.post<Workout>(this.url+'/start-workout/' + userId, workout).toPromise();
     }
 
-    addExerciseToWorkout(workoutExercise: WorkoutExercise, workoutId: number): Observable<Workout>{
+    addExerciseToWorkout(workoutExercise: any, workoutId: number): Observable<Workout>{
         return this.httpClient.put<Workout>(this.url+'/add-exercise/' + workoutId, workoutExercise);
     }
 
@@ -25,7 +26,7 @@ export class WorkoutService {
         return this.httpClient.put<Workout>(this.url+'/remove-exercise/' + workoutId, workoutExercise);
     }
 
-    getAll(userId: number): Observable<Workout[]>{
-        return this.httpClient.get<Workout[]>(this.url+'/get-all/'+ userId);
+    getAll(userId: number): Promise<Workout[]>{
+        return this.httpClient.get<Workout[]>(this.url+'/get-all/'+ userId).toPromise();
     }
 }

@@ -33,6 +33,10 @@ namespace backend.Services
                     date = workoutDto.date
                 });
                 _userData.UpdateUserData(userData);
+                List<Workout> workouts = await _workoutData.WorkoutDataTest(userData.Id);
+                workout.Id = workouts.Last().Id;
+                workout.date = workoutDto.date;
+                workout.WorkoutDuration = workoutDto.WorkoutDuration;
             }
             else
             {
@@ -66,10 +70,26 @@ namespace backend.Services
                     List<ExerciseWorkoutRel> exerciseWorkoutRels = await _workoutData.GetByWorkoutId(workoutId);
                     for (int i = 0; i < exerciseWorkoutRels.Count; i++)
                     {
+                        ExerciseDto exerciseDto = new ExerciseDto();
+                        if (exerciseWorkoutRels[i].Exercise != null)
+                        {
+                            exerciseDto = new ExerciseDto()
+                            {
+                                Id = exerciseWorkoutRels[i].Exercise.Id,
+                                Name = exerciseWorkoutRels[i].Exercise.Name,
+                                ImageString = exerciseWorkoutRels[i].Exercise.ImageString,
+                                Category = exerciseWorkoutRels[i].Exercise.Category
+
+                            };
+                        }
+
                         workoutExerciseDtos.Add(new WorkoutExerciseDto()
                         {
                             id = exerciseWorkoutRels[i].Id,
+                            exercise = exerciseDto,
                             Weight = exerciseWorkoutRels[i].Weight,
+                            NumberOfReps = exerciseWorkoutRels[i].NumberOfReps,
+                            NumberOfSets = exerciseWorkoutRels[i].NumberOfSets
 
                         });
                     }
@@ -110,10 +130,27 @@ namespace backend.Services
                     List<ExerciseWorkoutRel> exerciseWorkoutRels = await _workoutData.GetByWorkoutId(workouts[i].Id);
                     for (int j = 0; j < exerciseWorkoutRels.Count; j++)
                     {
+                     
+                        ExerciseDto exerciseDto = new ExerciseDto();
+                        if (exerciseWorkoutRels[j].Exercise != null)
+                        {
+                            exerciseDto = new ExerciseDto()
+                            {
+                                Id = exerciseWorkoutRels[j].Exercise.Id,
+                                Name = exerciseWorkoutRels[j].Exercise.Name,
+                                ImageString = exerciseWorkoutRels[j].Exercise.ImageString,
+                                Category = exerciseWorkoutRels[j].Exercise.Category
+
+                            };
+                        }
+
                         workoutExerciseDtos.Add(new WorkoutExerciseDto()
                         {
                             id = exerciseWorkoutRels[j].Id,
+                            exercise = exerciseDto,
                             Weight = exerciseWorkoutRels[j].Weight,
+                            NumberOfReps = exerciseWorkoutRels[j].NumberOfReps,
+                            NumberOfSets = exerciseWorkoutRels[j].NumberOfSets
 
                         });
                     }
@@ -146,17 +183,33 @@ namespace backend.Services
                 ExerciseWorkoutRel exercise = await _workoutData.GetByExerciseWorkoutRelId(workoutExerciseDto.id);
                 if (exercise == null)
                 {
-                    throw new Exception("exerciseRel not exist!!!");
+                    throw new Exception("ExerciseRel not exist for Id:"+ workoutExerciseDto.id+"!!!");
                 }
                 _workoutData.RemoveExerciseWorkoutRel(exercise);
 
                 List<ExerciseWorkoutRel> exerciseWorkoutRels = await _workoutData.GetByWorkoutId(workoutId);
                 for (int i = 0; i < exerciseWorkoutRels.Count; i++)
                 {
+
+                    ExerciseDto exerciseDto = new ExerciseDto();
+                    if (exerciseWorkoutRels[i].Exercise != null)
+                    {
+                        exerciseDto = new ExerciseDto()
+                        {
+                            Id = exerciseWorkoutRels[i].Exercise.Id,
+                            Name = exerciseWorkoutRels[i].Exercise.Name,
+                            ImageString = exerciseWorkoutRels[i].Exercise.ImageString,
+                            Category = exerciseWorkoutRels[i].Exercise.Category
+
+                        };
+                    }
                     workoutExerciseDtos.Add(new WorkoutExerciseDto()
                     {
                         id = exerciseWorkoutRels[i].Id,
+                        exercise = exerciseDto,
                         Weight = exerciseWorkoutRels[i].Weight,
+                        NumberOfReps = exerciseWorkoutRels[i].NumberOfReps,
+                        NumberOfSets = exerciseWorkoutRels[i].NumberOfSets
 
                     });
                 }

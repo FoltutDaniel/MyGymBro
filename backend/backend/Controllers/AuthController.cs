@@ -9,7 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using backend.Helper;
+
 
 namespace backend.Controllers
 {
@@ -73,7 +73,7 @@ namespace backend.Controllers
                 {
 
                     string token = authorizationHeader.Substring("Bearer ".Length).Trim();
-                    TokenManager.RevokeToken(token);
+                   
                 }
 
                 return Ok();

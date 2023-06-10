@@ -100,3 +100,5 @@ C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\bin\Debug\net6.0\Microsoft.
 C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\bin\Debug\net6.0\Moq.dll

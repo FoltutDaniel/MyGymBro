@@ -51,7 +51,7 @@ namespace backend.Data
 
         public async Task<UserData> GetUserDataById(int id)
         {
-            return await _dbInfoContext.UserDatas.Where(u => u.Id == id).FirstOrDefaultAsync();
+            return await _dbInfoContext.UserDatas.Where(u => u.Id == id).Include(_=> _.User).FirstOrDefaultAsync();
         }
 
         public async Task<List<UserData>> GetUserDatas()

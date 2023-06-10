@@ -15,7 +15,12 @@ namespace backend.Data
 
         public async Task<List<ExerciseWorkoutRel>> GetByWorkoutId(int Id)
         {
-            return await _dbInfoContext.ExerciseWorkoutRel.Where(_ => _.Workout.Id == Id).ToListAsync();
+            return await _dbInfoContext.ExerciseWorkoutRel.Where(_ => _.Workout.Id == Id).Include(_ => _.Exercise).ToListAsync();
+        }
+
+        public async Task<Exercise> GetExerciseExerciseWorkoutRelId(int Id)
+        {
+            return  (await _dbInfoContext.ExerciseWorkoutRel.Where(_ => _.Id == Id).FirstOrDefaultAsync()).Exercise;
         }
 
         public async Task<ExerciseWorkoutRel> GetByWorkoutOneId(int Id)
@@ -25,7 +30,7 @@ namespace backend.Data
 
         public async Task<ExerciseWorkoutRel> GetByExerciseWorkoutRelId(int Id)
         {
-            return await _dbInfoContext.ExerciseWorkoutRel.Where(_ => _.Id == Id).FirstOrDefaultAsync();
+            return await _dbInfoContext.ExerciseWorkoutRel.Where(_ => _.Id == Id).Include(_=>_.Exercise).FirstOrDefaultAsync();
         }
 
 

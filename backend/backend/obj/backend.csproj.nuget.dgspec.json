@@ -77,6 +77,10 @@
               "target": "Package",
               "version": "[7.0.4, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
+            },
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[6.1.0, )"

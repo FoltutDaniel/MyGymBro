@@ -1,0 +1,49 @@
+2023-06-06 20:44:38.672 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-06-06 20:44:38.896 +03:00 [DBG] Hosting starting
+2023-06-06 20:44:38.947 +03:00 [INF] User profile is available. Using 'C:\Users\Aruncutean\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-06-06 20:44:38.953 +03:00 [DBG] Reading data from file 'C:\Users\Aruncutean\AppData\Local\ASP.NET\DataProtection-Keys\key-0dce4c23-f313-4623-98a3-9be35cdf3972.xml'.
+2023-06-06 20:45:16.308 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-06-06 20:45:16.521 +03:00 [DBG] Hosting starting
+2023-06-06 20:45:16.567 +03:00 [INF] User profile is available. Using 'C:\Users\Aruncutean\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-06-06 20:45:16.573 +03:00 [DBG] Reading data from file 'C:\Users\Aruncutean\AppData\Local\ASP.NET\DataProtection-Keys\key-0dce4c23-f313-4623-98a3-9be35cdf3972.xml'.
+2023-06-06 20:45:16.587 +03:00 [DBG] Reading data from file 'C:\Users\Aruncutean\AppData\Local\ASP.NET\DataProtection-Keys\key-84faa7f8-9278-420f-862e-92c7c2ff8d24.xml'.
+2023-06-06 20:45:16.615 +03:00 [DBG] Found key {0dce4c23-f313-4623-98a3-9be35cdf3972}.
+2023-06-06 20:45:16.627 +03:00 [DBG] Found key {84faa7f8-9278-420f-862e-92c7c2ff8d24}.
+2023-06-06 20:45:16.640 +03:00 [DBG] Considering key {84faa7f8-9278-420f-862e-92c7c2ff8d24} with expiration date 2023-07-02 15:57:36Z as default key.
+2023-06-06 20:45:16.647 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-06 20:45:16.655 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-06-06 20:45:16.658 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-06 20:45:16.669 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-06-06 20:45:16.673 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-06-06 20:45:16.679 +03:00 [DBG] Using key {84faa7f8-9278-420f-862e-92c7c2ff8d24} as the default key.
+2023-06-06 20:45:16.682 +03:00 [DBG] Key ring with default key {84faa7f8-9278-420f-862e-92c7c2ff8d24} was loaded during application startup.
+2023-06-06 20:45:16.966 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F5D6599CBBA12DF6A635296EEC65EA1CF2648524)
+2023-06-06 20:45:17.027 +03:00 [INF] Now listening on: https://localhost:7220
+2023-06-06 20:45:17.029 +03:00 [INF] Now listening on: http://localhost:5122
+2023-06-06 20:45:17.031 +03:00 [DBG] Loaded hosting startup assembly backend
+2023-06-06 20:45:17.034 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-06-06 20:45:17.036 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-06-06 20:45:17.038 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-06 20:45:17.040 +03:00 [INF] Hosting environment: Development
+2023-06-06 20:45:17.043 +03:00 [INF] Content root path: C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\
+2023-06-06 20:45:17.045 +03:00 [DBG] Hosting started
+2023-06-06 20:45:17.266 +03:00 [DBG] Connection id "0HMR6MN5521B2" accepted.
+2023-06-06 20:45:17.266 +03:00 [DBG] Connection id "0HMR6MN5521B1" accepted.
+2023-06-06 20:45:17.268 +03:00 [DBG] Connection id "0HMR6MN5521B2" received FIN.
+2023-06-06 20:45:17.270 +03:00 [DBG] Connection id "0HMR6MN5521B2" started.
+2023-06-06 20:45:17.268 +03:00 [DBG] Connection id "0HMR6MN5521B1" received FIN.
+2023-06-06 20:45:17.271 +03:00 [DBG] Connection id "0HMR6MN5521B1" started.
+2023-06-06 20:45:17.304 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-06-06 20:45:17.304 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-06-06 20:45:17.371 +03:00 [DBG] Connection id "0HMR6MN5521B1" stopped.
+2023-06-06 20:45:17.371 +03:00 [DBG] Connection id "0HMR6MN5521B2" stopped.
+2023-06-06 20:45:17.376 +03:00 [DBG] Connection id "0HMR6MN5521B2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-06-06 20:45:17.376 +03:00 [DBG] Connection id "0HMR6MN5521B1" sending FIN because: "The Socket transport's send loop completed gracefully."

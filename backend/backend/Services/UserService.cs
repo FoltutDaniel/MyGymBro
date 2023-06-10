@@ -23,7 +23,6 @@ namespace backend.Services
             _configuration = configuration;
         }
 
-
         public async Task<Model.UserInfo> SingIn(UserSingIn userSingIn)
         {
             Model.UserInfo userInfo = null;
@@ -213,6 +212,7 @@ namespace backend.Services
 
             if (userD != null)
             {
+
                 userD.Id = userDataDto.Id;
                 userD.Weight = userDataDto.Weight;
                 userD.Height = userDataDto.Height;
@@ -224,7 +224,19 @@ namespace backend.Services
             {
                 throw new Exception("UserData not exist!!");
             }
-            return userDataDto;
+            return new UserDataDto()
+            {
+                User = new UserDto()
+                {
+                    UserName = userD.User.Username,
+                    Id = userD.User.UserId,
+                    Email = userD.User.Email
+                },
+                Weight = userD.Weight,
+                Height = userD.Height,
+                TargetWeight = userD.TargetWeight,
+                Id = userDataDto.Id
+            };
         }
 
         public Task<List<UserData>> GetUserDatas()
@@ -234,7 +246,7 @@ namespace backend.Services
 
         public async Task<UserDto> ChangePassword(UserDto user)
         {
-            User userD = await userData.GetUserById(user.Id);
+            User userD = await userData.GetUserByEmail(user.Email);
 
             if (userD != null)
             {

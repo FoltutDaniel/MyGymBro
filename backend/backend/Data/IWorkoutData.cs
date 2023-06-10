@@ -18,5 +18,8 @@ namespace backend.Data
         Task UpdateWorkoutById(Workout workout);
 
         public Task<ExerciseWorkoutRel> GetByExerciseWorkoutRelId(int Id);
+
+
+        public Task<Exercise> GetExerciseExerciseWorkoutRelId(int Id);
     }
 }

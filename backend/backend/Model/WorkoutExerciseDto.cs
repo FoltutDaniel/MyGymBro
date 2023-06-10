@@ -5,7 +5,7 @@ namespace backend.Model
     public class WorkoutExerciseDto
     {
         public int id { get; set; }
-        public ExerciseDto exercise { get; set; }
+        public ExerciseDto? exercise { get; set; }
 
         public float NumberOfSets { get; set; }
 

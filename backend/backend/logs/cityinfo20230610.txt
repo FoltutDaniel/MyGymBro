@@ -17463,3 +17463,815 @@ LIMIT 1
 2023-06-10 14:55:35.827 +03:00 [INF] Hosting environment: Development
 2023-06-10 14:55:35.828 +03:00 [INF] Content root path: C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\
 2023-06-10 14:55:35.829 +03:00 [DBG] Hosting started
+2023-06-10 17:26:20.126 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-06-10 17:26:20.237 +03:00 [DBG] Hosting starting
+2023-06-10 17:26:20.269 +03:00 [INF] User profile is available. Using 'C:\Users\Aruncutean\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-06-10 17:26:20.273 +03:00 [DBG] Reading data from file 'C:\Users\Aruncutean\AppData\Local\ASP.NET\DataProtection-Keys\key-0dce4c23-f313-4623-98a3-9be35cdf3972.xml'.
+2023-06-10 17:26:20.277 +03:00 [DBG] Reading data from file 'C:\Users\Aruncutean\AppData\Local\ASP.NET\DataProtection-Keys\key-84faa7f8-9278-420f-862e-92c7c2ff8d24.xml'.
+2023-06-10 17:26:20.282 +03:00 [DBG] Found key {0dce4c23-f313-4623-98a3-9be35cdf3972}.
+2023-06-10 17:26:20.287 +03:00 [DBG] Found key {84faa7f8-9278-420f-862e-92c7c2ff8d24}.
+2023-06-10 17:26:20.294 +03:00 [DBG] Considering key {84faa7f8-9278-420f-862e-92c7c2ff8d24} with expiration date 2023-07-02 15:57:36Z as default key.
+2023-06-10 17:26:20.298 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-10 17:26:20.301 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-06-10 17:26:20.304 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-10 17:26:20.309 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-06-10 17:26:20.312 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-06-10 17:26:20.316 +03:00 [DBG] Using key {84faa7f8-9278-420f-862e-92c7c2ff8d24} as the default key.
+2023-06-10 17:26:20.318 +03:00 [DBG] Key ring with default key {84faa7f8-9278-420f-862e-92c7c2ff8d24} was loaded during application startup.
+2023-06-10 17:26:20.479 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F5D6599CBBA12DF6A635296EEC65EA1CF2648524)
+2023-06-10 17:26:20.509 +03:00 [INF] Now listening on: https://localhost:7220
+2023-06-10 17:26:20.510 +03:00 [INF] Now listening on: http://localhost:5122
+2023-06-10 17:26:20.511 +03:00 [DBG] Loaded hosting startup assembly backend
+2023-06-10 17:26:20.512 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-06-10 17:26:20.513 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-06-10 17:26:20.515 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-10 17:26:20.515 +03:00 [INF] Hosting environment: Development
+2023-06-10 17:26:20.516 +03:00 [INF] Content root path: C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\
+2023-06-10 17:26:20.517 +03:00 [DBG] Hosting started
+2023-06-10 17:26:20.719 +03:00 [DBG] Connection id "0HMR9NQKJRTJ7" accepted.
+2023-06-10 17:26:20.719 +03:00 [DBG] Connection id "0HMR9NQKJRTJ8" accepted.
+2023-06-10 17:26:20.722 +03:00 [DBG] Connection id "0HMR9NQKJRTJ7" started.
+2023-06-10 17:26:20.722 +03:00 [DBG] Connection id "0HMR9NQKJRTJ8" started.
+2023-06-10 17:26:20.750 +03:00 [DBG] Connection id "0HMR9NQKJRTJ8" received FIN.
+2023-06-10 17:26:20.750 +03:00 [DBG] Connection id "0HMR9NQKJRTJ7" received FIN.
+2023-06-10 17:26:20.762 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-06-10 17:26:20.762 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-06-10 17:26:20.801 +03:00 [DBG] Connection id "0HMR9NQKJRTJ8" stopped.
+2023-06-10 17:26:20.801 +03:00 [DBG] Connection id "0HMR9NQKJRTJ7" stopped.
+2023-06-10 17:26:20.805 +03:00 [DBG] Connection id "0HMR9NQKJRTJ7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-06-10 17:26:20.805 +03:00 [DBG] Connection id "0HMR9NQKJRTJ8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-06-10 17:26:21.144 +03:00 [DBG] Connection id "0HMR9NQKJRTJ9" accepted.
+2023-06-10 17:26:21.145 +03:00 [DBG] Connection id "0HMR9NQKJRTJ9" started.
+2023-06-10 17:26:21.184 +03:00 [DBG] Connection 0HMR9NQKJRTJ9 established using the following protocol: "Tls13"
+2023-06-10 17:26:21.240 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/swagger/index.html - -
+2023-06-10 17:26:21.299 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-06-10 17:26:21.684 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-06-10 17:26:21.702 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-06-10 17:26:21.709 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/swagger/index.html - - - 200 - text/html;charset=utf-8 471.6064ms
+2023-06-10 17:26:21.759 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - -
+2023-06-10 17:26:21.763 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 4.0937ms
+2023-06-10 17:26:21.864 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_vs/browserLink - -
+2023-06-10 17:26:21.887 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.3911ms
+2023-06-10 17:26:22.110 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/swagger/v1/swagger.json - -
+2023-06-10 17:26:22.262 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 151.8876ms
+2023-06-10 17:27:11.039 +03:00 [DBG] Connection id "0HMR9NQKJRTJA" accepted.
+2023-06-10 17:27:11.043 +03:00 [DBG] Connection id "0HMR9NQKJRTJA" received FIN.
+2023-06-10 17:27:11.044 +03:00 [DBG] Connection id "0HMR9NQKJRTJA" started.
+2023-06-10 17:27:11.044 +03:00 [DBG] Connection id "0HMR9NQKJRTJB" accepted.
+2023-06-10 17:27:11.055 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-06-10 17:27:11.056 +03:00 [DBG] Connection id "0HMR9NQKJRTJB" started.
+2023-06-10 17:27:11.058 +03:00 [DBG] Connection id "0HMR9NQKJRTJA" stopped.
+2023-06-10 17:27:11.060 +03:00 [DBG] Connection id "0HMR9NQKJRTJA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-06-10 17:27:11.062 +03:00 [DBG] Connection 0HMR9NQKJRTJB established using the following protocol: "Tls13"
+2023-06-10 17:27:11.071 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/user/userData - -
+2023-06-10 17:27:11.073 +03:00 [DBG] The request path  does not match the path filter
+2023-06-10 17:27:11.091 +03:00 [DBG] No candidates found for the request path '/user/userData'
+2023-06-10 17:27:11.093 +03:00 [DBG] Request did not match any endpoints
+2023-06-10 17:27:11.295 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-10 17:27:11.298 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2023-06-10 17:27:11.307 +03:00 [DBG] Connection id "0HMR9NQKJRTJB" completed keep alive response.
+2023-06-10 17:27:11.308 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/user/userData - - - 404 0 - 237.4862ms
+2023-06-10 17:27:17.881 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/auth/GetAllUser - -
+2023-06-10 17:27:17.883 +03:00 [DBG] The request path  does not match the path filter
+2023-06-10 17:27:17.889 +03:00 [DBG] 1 candidate(s) found for the request path '/auth/GetAllUser'
+2023-06-10 17:27:17.895 +03:00 [DBG] Endpoint 'backend.Controllers.AuthController.GetAllUser (backend)' with route pattern 'auth/GetAllUser' is valid for the request path '/auth/GetAllUser'
+2023-06-10 17:27:17.897 +03:00 [DBG] Request matched endpoint 'backend.Controllers.AuthController.GetAllUser (backend)'
+2023-06-10 17:27:17.906 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-10 17:27:17.913 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2023-06-10 17:27:17.918 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-06-10 17:27:17.927 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-06-10 17:27:17.929 +03:00 [DBG] Connection id "0HMR9NQKJRTJB" completed keep alive response.
+2023-06-10 17:27:17.930 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/auth/GetAllUser - - - 401 0 - 48.6265ms
+2023-06-10 17:27:23.593 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7220/auth/login application/json 65
+2023-06-10 17:27:23.594 +03:00 [DBG] POST requests are not supported
+2023-06-10 17:27:23.595 +03:00 [DBG] 1 candidate(s) found for the request path '/auth/login'
+2023-06-10 17:27:23.596 +03:00 [DBG] Endpoint 'backend.Controllers.AuthController.SingIn (backend)' with route pattern 'auth/login' is valid for the request path '/auth/login'
+2023-06-10 17:27:23.598 +03:00 [DBG] Request matched endpoint 'backend.Controllers.AuthController.SingIn (backend)'
+2023-06-10 17:27:23.600 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-10 17:27:23.603 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2023-06-10 17:27:23.604 +03:00 [INF] Executing endpoint 'backend.Controllers.AuthController.SingIn (backend)'
+2023-06-10 17:27:23.634 +03:00 [INF] Route matched with {action = "SingIn", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SingIn(backend.Model.UserSingIn) on controller backend.Controllers.AuthController (backend).
+2023-06-10 17:27:23.637 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-06-10 17:27:23.639 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-06-10 17:27:23.640 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-06-10 17:27:23.642 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-06-10 17:27:23.643 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-06-10 17:27:23.645 +03:00 [DBG] Executing controller factory for controller backend.Controllers.AuthController (backend)
+2023-06-10 17:27:23.761 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-06-10 17:27:23.788 +03:00 [DBG] Executed controller factory for controller backend.Controllers.AuthController (backend)
+2023-06-10 17:27:23.793 +03:00 [DBG] Attempting to bind parameter 'userSingIn' of type 'backend.Model.UserSingIn' ...
+2023-06-10 17:27:23.797 +03:00 [DBG] Attempting to bind parameter 'userSingIn' of type 'backend.Model.UserSingIn' using the name '' in request data ...
+2023-06-10 17:27:23.799 +03:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-06-10 17:27:23.801 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-06-10 17:27:23.808 +03:00 [DBG] Connection id "0HMR9NQKJRTJB", Request id "0HMR9NQKJRTJB:00000004": started reading request body.
+2023-06-10 17:27:23.811 +03:00 [DBG] Connection id "0HMR9NQKJRTJB", Request id "0HMR9NQKJRTJB:00000004": done reading request body.
+2023-06-10 17:27:23.894 +03:00 [DBG] Done attempting to bind parameter 'userSingIn' of type 'backend.Model.UserSingIn'.
+2023-06-10 17:27:23.897 +03:00 [DBG] Done attempting to bind parameter 'userSingIn' of type 'backend.Model.UserSingIn'.
+2023-06-10 17:27:23.899 +03:00 [DBG] Attempting to validate the bound parameter 'userSingIn' of type 'backend.Model.UserSingIn' ...
+2023-06-10 17:27:23.907 +03:00 [DBG] Done attempting to validate the bound parameter 'userSingIn' of type 'backend.Model.UserSingIn'.
+2023-06-10 17:27:24.751 +03:00 [DBG] Entity Framework Core 7.0.4 initialized 'DbInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.4' with options: None
+2023-06-10 17:27:24.822 +03:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Where(_ => _.Email == __email_0)
+    .FirstOrDefault()'
+2023-06-10 17:27:25.123 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.UserId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required MaxLength(50), 1], [Property: User.Password (string) Required MaxLength(50), 2], [Property: User.Username (string) Required MaxLength(50), 3] }
+            SELECT TOP(1) u.UserId, u.Email, u.Password, u.Username
+            FROM Users AS u
+            WHERE u.Email == @__email_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        backend.DbContexts.DbInfoContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-06-10 17:27:25.171 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-06-10 17:27:25.176 +03:00 [DBG] Creating DbConnection.
+2023-06-10 17:27:25.194 +03:00 [DBG] Created DbConnection. (15ms).
+2023-06-10 17:27:25.204 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (30ms).
+2023-06-10 17:27:25.210 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (39ms).
+2023-06-10 17:27:25.221 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:27:25.239 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:27:25.253 +03:00 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Email" = @__email_0
+LIMIT 1
+2023-06-10 17:27:25.282 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[@__email_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Email" = @__email_0
+LIMIT 1
+2023-06-10 17:27:25.319 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:27:25.346 +03:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:27:25.354 +03:00 [DBG] A data reader for 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db' is being disposed after spending 64ms reading results.
+2023-06-10 17:27:25.362 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:27:25.370 +03:00 [DBG] Closed connection to database 'main' on server 'MyGymBroDB.db' (7ms).
+2023-06-10 17:27:25.401 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-06-10 17:27:25.407 +03:00 [DBG] No information found on request to perform content negotiation.
+2023-06-10 17:27:25.408 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-10 17:27:25.409 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-10 17:27:25.411 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-10 17:27:25.412 +03:00 [INF] Executing OkObjectResult, writing value of type 'backend.Model.UserInfo'.
+2023-06-10 17:27:25.456 +03:00 [INF] Executed action backend.Controllers.AuthController.SingIn (backend) in 1807.6448ms
+2023-06-10 17:27:25.458 +03:00 [INF] Executed endpoint 'backend.Controllers.AuthController.SingIn (backend)'
+2023-06-10 17:27:25.459 +03:00 [DBG] Connection id "0HMR9NQKJRTJB" completed keep alive response.
+2023-06-10 17:27:25.465 +03:00 [DBG] 'DbInfoContext' disposed.
+2023-06-10 17:27:25.474 +03:00 [DBG] Disposing connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:27:25.477 +03:00 [DBG] Disposed connection to database 'main' on server 'MyGymBroDB.db' (3ms).
+2023-06-10 17:27:25.481 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7220/auth/login application/json 65 - 200 495 application/json;+charset=utf-8 1888.2464ms
+2023-06-10 17:27:31.767 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/auth/GetAllUser - -
+2023-06-10 17:27:31.768 +03:00 [DBG] The request path  does not match the path filter
+2023-06-10 17:27:31.769 +03:00 [DBG] 1 candidate(s) found for the request path '/auth/GetAllUser'
+2023-06-10 17:27:31.770 +03:00 [DBG] Endpoint 'backend.Controllers.AuthController.GetAllUser (backend)' with route pattern 'auth/GetAllUser' is valid for the request path '/auth/GetAllUser'
+2023-06-10 17:27:31.772 +03:00 [DBG] Request matched endpoint 'backend.Controllers.AuthController.GetAllUser (backend)'
+2023-06-10 17:27:31.786 +03:00 [DBG] Successfully validated the token.
+2023-06-10 17:27:31.789 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-06-10 17:27:31.791 +03:00 [DBG] Authorization was successful.
+2023-06-10 17:27:31.792 +03:00 [INF] Executing endpoint 'backend.Controllers.AuthController.GetAllUser (backend)'
+2023-06-10 17:27:31.794 +03:00 [INF] Route matched with {action = "GetAllUser", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[backend.Entities.User]] GetAllUser() on controller backend.Controllers.AuthController (backend).
+2023-06-10 17:27:31.796 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-06-10 17:27:31.798 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-06-10 17:27:31.799 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-06-10 17:27:31.801 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-06-10 17:27:31.802 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-06-10 17:27:31.803 +03:00 [DBG] Executing controller factory for controller backend.Controllers.AuthController (backend)
+2023-06-10 17:27:31.805 +03:00 [DBG] Executed controller factory for controller backend.Controllers.AuthController (backend)
+2023-06-10 17:27:31.813 +03:00 [DBG] Entity Framework Core 7.0.4 initialized 'DbInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.4' with options: None
+2023-06-10 17:27:31.822 +03:00 [DBG] Compiling query expression: 
+'DbSet<User>()'
+2023-06-10 17:27:31.825 +03:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<User>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.UserId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required MaxLength(50), 1], [Property: User.Password (string) Required MaxLength(50), 2], [Property: User.Username (string) Required MaxLength(50), 3] }
+        SELECT u.UserId, u.Email, u.Password, u.Username
+        FROM Users AS u), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+    backend.DbContexts.DbInfoContext, 
+    False, 
+    False, 
+    True
+)'
+2023-06-10 17:27:31.827 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-06-10 17:27:31.828 +03:00 [DBG] Creating DbConnection.
+2023-06-10 17:27:31.829 +03:00 [DBG] Created DbConnection. (1ms).
+2023-06-10 17:27:31.831 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2023-06-10 17:27:31.832 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2023-06-10 17:27:31.834 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:27:31.835 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:27:31.837 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username"
+FROM "Users" AS "u"
+2023-06-10 17:27:31.839 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username"
+FROM "Users" AS "u"
+2023-06-10 17:27:31.841 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:27:31.843 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:27:31.844 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:27:31.846 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:27:31.847 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:27:31.849 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:27:31.850 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:27:31.852 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:27:31.853 +03:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:27:31.854 +03:00 [DBG] A data reader for 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db' is being disposed after spending 13ms reading results.
+2023-06-10 17:27:31.856 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:27:31.857 +03:00 [DBG] Closed connection to database 'main' on server 'MyGymBroDB.db' (1ms).
+2023-06-10 17:27:31.859 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-06-10 17:27:31.862 +03:00 [DBG] No information found on request to perform content negotiation.
+2023-06-10 17:27:31.863 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-10 17:27:31.864 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-10 17:27:31.864 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-10 17:27:31.866 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Threading.Tasks.Task`1[[System.Collections.Generic.List`1[[backend.Entities.User, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-06-10 17:27:31.888 +03:00 [INF] Executed action backend.Controllers.AuthController.GetAllUser (backend) in 84.4105ms
+2023-06-10 17:27:31.890 +03:00 [INF] Executed endpoint 'backend.Controllers.AuthController.GetAllUser (backend)'
+2023-06-10 17:27:31.892 +03:00 [DBG] Connection id "0HMR9NQKJRTJB" completed keep alive response.
+2023-06-10 17:27:31.893 +03:00 [DBG] 'DbInfoContext' disposed.
+2023-06-10 17:27:31.895 +03:00 [DBG] Disposing connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:27:31.897 +03:00 [DBG] Disposed connection to database 'main' on server 'MyGymBroDB.db' (1ms).
+2023-06-10 17:27:31.898 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/auth/GetAllUser - - - 200 1302 application/json;+charset=utf-8 131.5050ms
+2023-06-10 17:27:41.579 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/user/user-data?id=1 - -
+2023-06-10 17:27:41.580 +03:00 [DBG] The request path  does not match the path filter
+2023-06-10 17:27:41.582 +03:00 [DBG] 1 candidate(s) found for the request path '/user/user-data'
+2023-06-10 17:27:41.583 +03:00 [DBG] Endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)' with route pattern 'user/user-data' is valid for the request path '/user/user-data'
+2023-06-10 17:27:41.584 +03:00 [DBG] Request matched endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:27:41.586 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-10 17:27:41.588 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2023-06-10 17:27:41.590 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-06-10 17:27:41.591 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-06-10 17:27:41.592 +03:00 [DBG] Connection id "0HMR9NQKJRTJB" completed keep alive response.
+2023-06-10 17:27:41.593 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/user/user-data?id=1 - - - 401 0 - 14.0118ms
+2023-06-10 17:27:48.510 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/user/user-data?id=1 - -
+2023-06-10 17:27:48.511 +03:00 [DBG] The request path  does not match the path filter
+2023-06-10 17:27:48.513 +03:00 [DBG] 1 candidate(s) found for the request path '/user/user-data'
+2023-06-10 17:27:48.514 +03:00 [DBG] Endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)' with route pattern 'user/user-data' is valid for the request path '/user/user-data'
+2023-06-10 17:27:48.516 +03:00 [DBG] Request matched endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:27:48.518 +03:00 [DBG] Successfully validated the token.
+2023-06-10 17:27:48.519 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-06-10 17:27:48.520 +03:00 [DBG] Authorization was successful.
+2023-06-10 17:27:48.521 +03:00 [INF] Executing endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:27:48.524 +03:00 [INF] Route matched with {action = "GetUserData", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[backend.Model.UserDataDto]] GetUserDataAsync(Int32) on controller backend.Controllers.UserController (backend).
+2023-06-10 17:27:48.526 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-06-10 17:27:48.528 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-06-10 17:27:48.530 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-06-10 17:27:48.531 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-06-10 17:27:48.533 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-06-10 17:27:48.535 +03:00 [DBG] Executing controller factory for controller backend.Controllers.UserController (backend)
+2023-06-10 17:27:48.538 +03:00 [DBG] Executed controller factory for controller backend.Controllers.UserController (backend)
+2023-06-10 17:27:48.543 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-06-10 17:27:48.546 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-06-10 17:27:48.548 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-06-10 17:27:48.550 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-06-10 17:27:48.552 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-06-10 17:27:48.553 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-06-10 17:27:48.595 +03:00 [DBG] Entity Framework Core 7.0.4 initialized 'DbInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.4' with options: None
+2023-06-10 17:27:48.598 +03:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Where(u => u.UserId == __id_0)
+    .FirstOrDefault()'
+2023-06-10 17:27:48.602 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.UserId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required MaxLength(50), 1], [Property: User.Password (string) Required MaxLength(50), 2], [Property: User.Username (string) Required MaxLength(50), 3] }
+            SELECT TOP(1) u.UserId, u.Email, u.Password, u.Username
+            FROM Users AS u
+            WHERE u.UserId == @__id_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        backend.DbContexts.DbInfoContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-06-10 17:27:48.604 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-06-10 17:27:48.605 +03:00 [DBG] Creating DbConnection.
+2023-06-10 17:27:48.606 +03:00 [DBG] Created DbConnection. (0ms).
+2023-06-10 17:27:48.607 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2023-06-10 17:27:48.609 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2023-06-10 17:27:48.610 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:27:48.611 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:27:48.613 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."UserId" = @__id_0
+LIMIT 1
+2023-06-10 17:27:48.615 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."UserId" = @__id_0
+LIMIT 1
+2023-06-10 17:27:48.618 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:27:48.619 +03:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:27:48.620 +03:00 [DBG] A data reader for 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db' is being disposed after spending 2ms reading results.
+2023-06-10 17:27:48.622 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:27:48.624 +03:00 [DBG] Closed connection to database 'main' on server 'MyGymBroDB.db' (2ms).
+2023-06-10 17:27:48.627 +03:00 [DBG] Compiling query expression: 
+'DbSet<UserData>()
+    .Where(u => u.UserId == __id_0)
+    .FirstOrDefault()'
+2023-06-10 17:27:48.630 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserData>(
+    asyncEnumerable: new SingleQueryingEnumerable<UserData>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserData.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserData.Height (float) Required, 1], [Property: UserData.TargetWeight (float) Required, 2], [Property: UserData.UserId (int) Required FK Index, 3], [Property: UserData.Weight (float) Required, 4] }
+            SELECT TOP(1) u.Id, u.Height, u.TargetWeight, u.UserId, u.Weight
+            FROM UserDatas AS u
+            WHERE u.UserId == @__id_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserData>, 
+        backend.DbContexts.DbInfoContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-06-10 17:27:48.634 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-06-10 17:27:48.636 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2023-06-10 17:27:48.637 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2023-06-10 17:27:48.638 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:27:48.640 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:27:48.641 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Height", "u"."TargetWeight", "u"."UserId", "u"."Weight"
+FROM "UserDatas" AS "u"
+WHERE "u"."UserId" = @__id_0
+LIMIT 1
+2023-06-10 17:27:48.643 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Height", "u"."TargetWeight", "u"."UserId", "u"."Weight"
+FROM "UserDatas" AS "u"
+WHERE "u"."UserId" = @__id_0
+LIMIT 1
+2023-06-10 17:27:48.671 +03:00 [DBG] The navigation 'User.UserData' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:27:48.676 +03:00 [DBG] Context 'DbInfoContext' started tracking 'UserData' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:27:48.685 +03:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:27:48.687 +03:00 [DBG] A data reader for 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db' is being disposed after spending 42ms reading results.
+2023-06-10 17:27:48.689 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:27:48.690 +03:00 [DBG] Closed connection to database 'main' on server 'MyGymBroDB.db' (1ms).
+2023-06-10 17:27:48.692 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-06-10 17:27:48.695 +03:00 [DBG] No information found on request to perform content negotiation.
+2023-06-10 17:27:48.696 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-10 17:27:48.696 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-10 17:27:48.697 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-10 17:27:48.698 +03:00 [INF] Executing OkObjectResult, writing value of type 'backend.Model.UserDataDto'.
+2023-06-10 17:27:48.704 +03:00 [INF] Executed action backend.Controllers.UserController.GetUserDataAsync (backend) in 169.0376ms
+2023-06-10 17:27:48.705 +03:00 [INF] Executed endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:27:48.706 +03:00 [DBG] Connection id "0HMR9NQKJRTJB" completed keep alive response.
+2023-06-10 17:27:48.707 +03:00 [DBG] 'DbInfoContext' disposed.
+2023-06-10 17:27:48.708 +03:00 [DBG] Disposing connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:27:48.709 +03:00 [DBG] Disposed connection to database 'main' on server 'MyGymBroDB.db' (1ms).
+2023-06-10 17:27:48.711 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/user/user-data?id=1 - - - 200 132 application/json;+charset=utf-8 200.8149ms
+2023-06-10 17:30:14.460 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-06-10 17:30:14.623 +03:00 [DBG] Hosting starting
+2023-06-10 17:30:14.668 +03:00 [INF] User profile is available. Using 'C:\Users\Aruncutean\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-06-10 17:30:14.672 +03:00 [DBG] Reading data from file 'C:\Users\Aruncutean\AppData\Local\ASP.NET\DataProtection-Keys\key-0dce4c23-f313-4623-98a3-9be35cdf3972.xml'.
+2023-06-10 17:30:14.678 +03:00 [DBG] Reading data from file 'C:\Users\Aruncutean\AppData\Local\ASP.NET\DataProtection-Keys\key-84faa7f8-9278-420f-862e-92c7c2ff8d24.xml'.
+2023-06-10 17:30:14.684 +03:00 [DBG] Found key {0dce4c23-f313-4623-98a3-9be35cdf3972}.
+2023-06-10 17:30:14.690 +03:00 [DBG] Found key {84faa7f8-9278-420f-862e-92c7c2ff8d24}.
+2023-06-10 17:30:14.698 +03:00 [DBG] Considering key {84faa7f8-9278-420f-862e-92c7c2ff8d24} with expiration date 2023-07-02 15:57:36Z as default key.
+2023-06-10 17:30:14.702 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-10 17:30:14.705 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-06-10 17:30:14.707 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-10 17:30:14.712 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-06-10 17:30:14.717 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-06-10 17:30:14.722 +03:00 [DBG] Using key {84faa7f8-9278-420f-862e-92c7c2ff8d24} as the default key.
+2023-06-10 17:30:14.724 +03:00 [DBG] Key ring with default key {84faa7f8-9278-420f-862e-92c7c2ff8d24} was loaded during application startup.
+2023-06-10 17:30:14.906 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F5D6599CBBA12DF6A635296EEC65EA1CF2648524)
+2023-06-10 17:30:14.951 +03:00 [INF] Now listening on: https://localhost:7220
+2023-06-10 17:30:14.953 +03:00 [INF] Now listening on: http://localhost:5122
+2023-06-10 17:30:14.954 +03:00 [DBG] Loaded hosting startup assembly backend
+2023-06-10 17:30:14.955 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-06-10 17:30:14.957 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-06-10 17:30:14.966 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-10 17:30:14.967 +03:00 [INF] Hosting environment: Development
+2023-06-10 17:30:14.969 +03:00 [INF] Content root path: C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\
+2023-06-10 17:30:14.970 +03:00 [DBG] Hosting started
+2023-06-10 17:30:14.971 +03:00 [DBG] Connection id "0HMR9NSQDSEU5" received FIN.
+2023-06-10 17:30:14.984 +03:00 [DBG] Connection id "0HMR9NSQDSEU5" accepted.
+2023-06-10 17:30:14.987 +03:00 [DBG] Connection id "0HMR9NSQDSEU5" started.
+2023-06-10 17:30:15.006 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-06-10 17:30:15.052 +03:00 [DBG] Connection id "0HMR9NSQDSEU5" stopped.
+2023-06-10 17:30:15.057 +03:00 [DBG] Connection id "0HMR9NSQDSEU5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-06-10 17:30:15.416 +03:00 [DBG] Connection id "0HMR9NSQDSEU6" accepted.
+2023-06-10 17:30:15.418 +03:00 [DBG] Connection id "0HMR9NSQDSEU6" started.
+2023-06-10 17:30:15.448 +03:00 [DBG] Connection 0HMR9NSQDSEU6 established using the following protocol: "Tls13"
+2023-06-10 17:30:15.508 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/swagger/index.html - -
+2023-06-10 17:30:15.546 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-06-10 17:30:15.831 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-06-10 17:30:15.848 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-06-10 17:30:15.854 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/swagger/index.html - - - 200 - text/html;charset=utf-8 349.5717ms
+2023-06-10 17:30:15.895 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - -
+2023-06-10 17:30:15.899 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 4.4618ms
+2023-06-10 17:30:16.052 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_vs/browserLink - -
+2023-06-10 17:30:16.077 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.4094ms
+2023-06-10 17:30:16.211 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/swagger/v1/swagger.json - -
+2023-06-10 17:30:16.341 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 130.6751ms
+2023-06-10 17:30:19.633 +03:00 [DBG] Connection id "0HMR9NSQDSEU7" accepted.
+2023-06-10 17:30:19.633 +03:00 [DBG] Connection id "0HMR9NSQDSEU7" received FIN.
+2023-06-10 17:30:19.635 +03:00 [DBG] Connection id "0HMR9NSQDSEU7" started.
+2023-06-10 17:30:19.635 +03:00 [DBG] Connection id "0HMR9NSQDSEU8" accepted.
+2023-06-10 17:30:19.638 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-06-10 17:30:19.639 +03:00 [DBG] Connection id "0HMR9NSQDSEU8" started.
+2023-06-10 17:30:19.641 +03:00 [DBG] Connection id "0HMR9NSQDSEU7" stopped.
+2023-06-10 17:30:19.644 +03:00 [DBG] Connection id "0HMR9NSQDSEU7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-06-10 17:30:19.651 +03:00 [DBG] Connection 0HMR9NSQDSEU8 established using the following protocol: "Tls13"
+2023-06-10 17:30:19.663 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/user/user-data?id=1 - -
+2023-06-10 17:30:19.666 +03:00 [DBG] The request path  does not match the path filter
+2023-06-10 17:30:19.688 +03:00 [DBG] 1 candidate(s) found for the request path '/user/user-data'
+2023-06-10 17:30:19.694 +03:00 [DBG] Endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)' with route pattern 'user/user-data' is valid for the request path '/user/user-data'
+2023-06-10 17:30:19.696 +03:00 [DBG] Request matched endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:19.935 +03:00 [DBG] Successfully validated the token.
+2023-06-10 17:30:19.937 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-06-10 17:30:19.944 +03:00 [DBG] Authorization was successful.
+2023-06-10 17:30:19.946 +03:00 [INF] Executing endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:19.977 +03:00 [INF] Route matched with {action = "GetUserData", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[backend.Model.UserDataDto]] GetUserDataAsync(Int32) on controller backend.Controllers.UserController (backend).
+2023-06-10 17:30:19.979 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-06-10 17:30:19.981 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-06-10 17:30:19.983 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-06-10 17:30:19.985 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-06-10 17:30:19.986 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-06-10 17:30:19.988 +03:00 [DBG] Executing controller factory for controller backend.Controllers.UserController (backend)
+2023-06-10 17:30:20.110 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-06-10 17:30:20.133 +03:00 [DBG] Executed controller factory for controller backend.Controllers.UserController (backend)
+2023-06-10 17:30:20.149 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-06-10 17:30:20.154 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-06-10 17:30:20.156 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:20.158 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:20.160 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-06-10 17:30:20.162 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:20.985 +03:00 [DBG] Entity Framework Core 7.0.4 initialized 'DbInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.4' with options: None
+2023-06-10 17:30:21.050 +03:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Where(u => u.UserId == __id_0)
+    .Include(_ => _.UserData)
+    .FirstOrDefault()'
+2023-06-10 17:30:21.160 +03:00 [DBG] Including navigation: 'User.UserData'.
+2023-06-10 17:30:21.400 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: User.UserId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required MaxLength(50), 1], [Property: User.Password (string) Required MaxLength(50), 2], [Property: User.Username (string) Required MaxLength(50), 3] }
+                1 -> Dictionary<IProperty, int> { [Property: UserData.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 4], [Property: UserData.Height (float) Required, 5], [Property: UserData.TargetWeight (float) Required, 6], [Property: UserData.UserId (int) Required FK Index, 7], [Property: UserData.Weight (float) Required, 8] }
+            SELECT TOP(1) u.UserId, u.Email, u.Password, u.Username, u0.Id, u0.Height, u0.TargetWeight, u0.UserId, u0.Weight
+            FROM Users AS u
+            LEFT JOIN UserDatas AS u0 ON u.UserId == u0.UserId
+            WHERE u.UserId == @__id_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        backend.DbContexts.DbInfoContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-06-10 17:30:21.448 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-06-10 17:30:21.452 +03:00 [DBG] Creating DbConnection.
+2023-06-10 17:30:21.471 +03:00 [DBG] Created DbConnection. (15ms).
+2023-06-10 17:30:21.480 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (28ms).
+2023-06-10 17:30:21.486 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (38ms).
+2023-06-10 17:30:21.497 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:30:21.512 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:21.526 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username", "u0"."Id", "u0"."Height", "u0"."TargetWeight", "u0"."UserId", "u0"."Weight"
+FROM "Users" AS "u"
+LEFT JOIN "UserDatas" AS "u0" ON "u"."UserId" = "u0"."UserId"
+WHERE "u"."UserId" = @__id_0
+LIMIT 1
+2023-06-10 17:30:21.554 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username", "u0"."Id", "u0"."Height", "u0"."TargetWeight", "u0"."UserId", "u0"."Weight"
+FROM "Users" AS "u"
+LEFT JOIN "UserDatas" AS "u0" ON "u"."UserId" = "u0"."UserId"
+WHERE "u"."UserId" = @__id_0
+LIMIT 1
+2023-06-10 17:30:21.595 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:21.638 +03:00 [DBG] The navigation 'User.UserData' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:21.643 +03:00 [DBG] Context 'DbInfoContext' started tracking 'UserData' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:21.659 +03:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:21.668 +03:00 [DBG] A data reader for 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db' is being disposed after spending 105ms reading results.
+2023-06-10 17:30:21.677 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:21.684 +03:00 [DBG] Closed connection to database 'main' on server 'MyGymBroDB.db' (6ms).
+2023-06-10 17:30:21.688 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-06-10 17:30:21.693 +03:00 [DBG] No information found on request to perform content negotiation.
+2023-06-10 17:30:21.695 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-10 17:30:21.696 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-10 17:30:21.697 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-10 17:30:21.698 +03:00 [INF] Executing OkObjectResult, writing value of type 'backend.Model.UserDataDto'.
+2023-06-10 17:30:21.797 +03:00 [INF] Executed action backend.Controllers.UserController.GetUserDataAsync (backend) in 1805.7125ms
+2023-06-10 17:30:21.800 +03:00 [INF] Executed endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:21.801 +03:00 [DBG] Connection id "0HMR9NSQDSEU8" completed keep alive response.
+2023-06-10 17:30:21.808 +03:00 [DBG] 'DbInfoContext' disposed.
+2023-06-10 17:30:21.817 +03:00 [DBG] Disposing connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:30:21.821 +03:00 [DBG] Disposed connection to database 'main' on server 'MyGymBroDB.db' (3ms).
+2023-06-10 17:30:21.824 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/user/user-data?id=1 - - - 200 132 application/json;+charset=utf-8 2160.3254ms
+2023-06-10 17:30:24.886 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/user/user-data?id=2 - -
+2023-06-10 17:30:24.887 +03:00 [DBG] The request path  does not match the path filter
+2023-06-10 17:30:24.889 +03:00 [DBG] 1 candidate(s) found for the request path '/user/user-data'
+2023-06-10 17:30:24.891 +03:00 [DBG] Endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)' with route pattern 'user/user-data' is valid for the request path '/user/user-data'
+2023-06-10 17:30:24.892 +03:00 [DBG] Request matched endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:24.894 +03:00 [DBG] Successfully validated the token.
+2023-06-10 17:30:24.895 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-06-10 17:30:24.897 +03:00 [DBG] Authorization was successful.
+2023-06-10 17:30:24.898 +03:00 [INF] Executing endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:24.899 +03:00 [INF] Route matched with {action = "GetUserData", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[backend.Model.UserDataDto]] GetUserDataAsync(Int32) on controller backend.Controllers.UserController (backend).
+2023-06-10 17:30:24.901 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-06-10 17:30:24.903 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-06-10 17:30:24.904 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-06-10 17:30:24.906 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-06-10 17:30:24.908 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-06-10 17:30:24.909 +03:00 [DBG] Executing controller factory for controller backend.Controllers.UserController (backend)
+2023-06-10 17:30:24.911 +03:00 [DBG] Executed controller factory for controller backend.Controllers.UserController (backend)
+2023-06-10 17:30:24.913 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-06-10 17:30:24.914 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-06-10 17:30:24.916 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:24.917 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:24.918 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-06-10 17:30:24.919 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:24.931 +03:00 [DBG] Entity Framework Core 7.0.4 initialized 'DbInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.4' with options: None
+2023-06-10 17:30:24.939 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-06-10 17:30:24.940 +03:00 [DBG] Creating DbConnection.
+2023-06-10 17:30:24.941 +03:00 [DBG] Created DbConnection. (0ms).
+2023-06-10 17:30:24.942 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2023-06-10 17:30:24.943 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2023-06-10 17:30:24.945 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:30:24.947 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:24.948 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username", "u0"."Id", "u0"."Height", "u0"."TargetWeight", "u0"."UserId", "u0"."Weight"
+FROM "Users" AS "u"
+LEFT JOIN "UserDatas" AS "u0" ON "u"."UserId" = "u0"."UserId"
+WHERE "u"."UserId" = @__id_0
+LIMIT 1
+2023-06-10 17:30:24.950 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username", "u0"."Id", "u0"."Height", "u0"."TargetWeight", "u0"."UserId", "u0"."Weight"
+FROM "Users" AS "u"
+LEFT JOIN "UserDatas" AS "u0" ON "u"."UserId" = "u0"."UserId"
+WHERE "u"."UserId" = @__id_0
+LIMIT 1
+2023-06-10 17:30:24.952 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:24.954 +03:00 [DBG] The navigation 'User.UserData' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:24.955 +03:00 [DBG] Context 'DbInfoContext' started tracking 'UserData' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:24.957 +03:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:24.958 +03:00 [DBG] A data reader for 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db' is being disposed after spending 5ms reading results.
+2023-06-10 17:30:24.960 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:24.961 +03:00 [DBG] Closed connection to database 'main' on server 'MyGymBroDB.db' (1ms).
+2023-06-10 17:30:24.963 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-06-10 17:30:24.966 +03:00 [DBG] No information found on request to perform content negotiation.
+2023-06-10 17:30:24.967 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-10 17:30:24.967 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-10 17:30:24.969 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-10 17:30:24.970 +03:00 [INF] Executing OkObjectResult, writing value of type 'backend.Model.UserDataDto'.
+2023-06-10 17:30:24.971 +03:00 [INF] Executed action backend.Controllers.UserController.GetUserDataAsync (backend) in 62.2052ms
+2023-06-10 17:30:24.973 +03:00 [INF] Executed endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:24.974 +03:00 [DBG] Connection id "0HMR9NSQDSEU8" completed keep alive response.
+2023-06-10 17:30:24.975 +03:00 [DBG] 'DbInfoContext' disposed.
+2023-06-10 17:30:24.976 +03:00 [DBG] Disposing connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:30:24.977 +03:00 [DBG] Disposed connection to database 'main' on server 'MyGymBroDB.db' (1ms).
+2023-06-10 17:30:24.979 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/user/user-data?id=2 - - - 200 131 application/json;+charset=utf-8 93.6538ms
+2023-06-10 17:30:26.143 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/user/user-data?id=3 - -
+2023-06-10 17:30:26.145 +03:00 [DBG] The request path  does not match the path filter
+2023-06-10 17:30:26.146 +03:00 [DBG] 1 candidate(s) found for the request path '/user/user-data'
+2023-06-10 17:30:26.147 +03:00 [DBG] Endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)' with route pattern 'user/user-data' is valid for the request path '/user/user-data'
+2023-06-10 17:30:26.148 +03:00 [DBG] Request matched endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:26.151 +03:00 [DBG] Successfully validated the token.
+2023-06-10 17:30:26.152 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-06-10 17:30:26.154 +03:00 [DBG] Authorization was successful.
+2023-06-10 17:30:26.154 +03:00 [INF] Executing endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:26.155 +03:00 [INF] Route matched with {action = "GetUserData", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[backend.Model.UserDataDto]] GetUserDataAsync(Int32) on controller backend.Controllers.UserController (backend).
+2023-06-10 17:30:26.157 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-06-10 17:30:26.159 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-06-10 17:30:26.161 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-06-10 17:30:26.163 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-06-10 17:30:26.164 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-06-10 17:30:26.166 +03:00 [DBG] Executing controller factory for controller backend.Controllers.UserController (backend)
+2023-06-10 17:30:26.169 +03:00 [DBG] Executed controller factory for controller backend.Controllers.UserController (backend)
+2023-06-10 17:30:26.171 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-06-10 17:30:26.172 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-06-10 17:30:26.173 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:26.175 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:26.176 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-06-10 17:30:26.178 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:26.212 +03:00 [DBG] Entity Framework Core 7.0.4 initialized 'DbInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.4' with options: None
+2023-06-10 17:30:26.216 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-06-10 17:30:26.217 +03:00 [DBG] Creating DbConnection.
+2023-06-10 17:30:26.218 +03:00 [DBG] Created DbConnection. (0ms).
+2023-06-10 17:30:26.219 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2023-06-10 17:30:26.220 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2023-06-10 17:30:26.221 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:30:26.222 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:26.223 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username", "u0"."Id", "u0"."Height", "u0"."TargetWeight", "u0"."UserId", "u0"."Weight"
+FROM "Users" AS "u"
+LEFT JOIN "UserDatas" AS "u0" ON "u"."UserId" = "u0"."UserId"
+WHERE "u"."UserId" = @__id_0
+LIMIT 1
+2023-06-10 17:30:26.227 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username", "u0"."Id", "u0"."Height", "u0"."TargetWeight", "u0"."UserId", "u0"."Weight"
+FROM "Users" AS "u"
+LEFT JOIN "UserDatas" AS "u0" ON "u"."UserId" = "u0"."UserId"
+WHERE "u"."UserId" = @__id_0
+LIMIT 1
+2023-06-10 17:30:26.228 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:26.230 +03:00 [DBG] The navigation 'User.UserData' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:26.232 +03:00 [DBG] Context 'DbInfoContext' started tracking 'UserData' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:26.233 +03:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:26.234 +03:00 [DBG] A data reader for 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db' is being disposed after spending 5ms reading results.
+2023-06-10 17:30:26.235 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:26.236 +03:00 [DBG] Closed connection to database 'main' on server 'MyGymBroDB.db' (1ms).
+2023-06-10 17:30:26.238 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-06-10 17:30:26.240 +03:00 [DBG] No information found on request to perform content negotiation.
+2023-06-10 17:30:26.241 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-10 17:30:26.242 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-10 17:30:26.243 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-10 17:30:26.245 +03:00 [INF] Executing OkObjectResult, writing value of type 'backend.Model.UserDataDto'.
+2023-06-10 17:30:26.246 +03:00 [INF] Executed action backend.Controllers.UserController.GetUserDataAsync (backend) in 80.3176ms
+2023-06-10 17:30:26.247 +03:00 [INF] Executed endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:26.249 +03:00 [DBG] Connection id "0HMR9NSQDSEU8" completed keep alive response.
+2023-06-10 17:30:26.250 +03:00 [DBG] 'DbInfoContext' disposed.
+2023-06-10 17:30:26.251 +03:00 [DBG] Disposing connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:30:26.252 +03:00 [DBG] Disposed connection to database 'main' on server 'MyGymBroDB.db' (1ms).
+2023-06-10 17:30:26.253 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/user/user-data?id=3 - - - 200 133 application/json;+charset=utf-8 109.8870ms
+2023-06-10 17:30:27.105 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/user/user-data?id=4 - -
+2023-06-10 17:30:27.107 +03:00 [DBG] The request path  does not match the path filter
+2023-06-10 17:30:27.108 +03:00 [DBG] 1 candidate(s) found for the request path '/user/user-data'
+2023-06-10 17:30:27.109 +03:00 [DBG] Endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)' with route pattern 'user/user-data' is valid for the request path '/user/user-data'
+2023-06-10 17:30:27.110 +03:00 [DBG] Request matched endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:27.111 +03:00 [DBG] Successfully validated the token.
+2023-06-10 17:30:27.112 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-06-10 17:30:27.113 +03:00 [DBG] Authorization was successful.
+2023-06-10 17:30:27.114 +03:00 [INF] Executing endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:27.115 +03:00 [INF] Route matched with {action = "GetUserData", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[backend.Model.UserDataDto]] GetUserDataAsync(Int32) on controller backend.Controllers.UserController (backend).
+2023-06-10 17:30:27.116 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-06-10 17:30:27.118 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-06-10 17:30:27.119 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-06-10 17:30:27.122 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-06-10 17:30:27.124 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-06-10 17:30:27.125 +03:00 [DBG] Executing controller factory for controller backend.Controllers.UserController (backend)
+2023-06-10 17:30:27.127 +03:00 [DBG] Executed controller factory for controller backend.Controllers.UserController (backend)
+2023-06-10 17:30:27.128 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-06-10 17:30:27.129 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-06-10 17:30:27.130 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:27.131 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:27.132 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-06-10 17:30:27.133 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:27.135 +03:00 [DBG] Entity Framework Core 7.0.4 initialized 'DbInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.4' with options: None
+2023-06-10 17:30:27.138 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-06-10 17:30:27.139 +03:00 [DBG] Creating DbConnection.
+2023-06-10 17:30:27.140 +03:00 [DBG] Created DbConnection. (1ms).
+2023-06-10 17:30:27.142 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2023-06-10 17:30:27.143 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2023-06-10 17:30:27.145 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:30:27.146 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:27.147 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username", "u0"."Id", "u0"."Height", "u0"."TargetWeight", "u0"."UserId", "u0"."Weight"
+FROM "Users" AS "u"
+LEFT JOIN "UserDatas" AS "u0" ON "u"."UserId" = "u0"."UserId"
+WHERE "u"."UserId" = @__id_0
+LIMIT 1
+2023-06-10 17:30:27.149 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username", "u0"."Id", "u0"."Height", "u0"."TargetWeight", "u0"."UserId", "u0"."Weight"
+FROM "Users" AS "u"
+LEFT JOIN "UserDatas" AS "u0" ON "u"."UserId" = "u0"."UserId"
+WHERE "u"."UserId" = @__id_0
+LIMIT 1
+2023-06-10 17:30:27.152 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:27.153 +03:00 [DBG] The navigation 'User.UserData' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:27.155 +03:00 [DBG] Context 'DbInfoContext' started tracking 'UserData' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:27.157 +03:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:27.158 +03:00 [DBG] A data reader for 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db' is being disposed after spending 6ms reading results.
+2023-06-10 17:30:27.160 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:27.161 +03:00 [DBG] Closed connection to database 'main' on server 'MyGymBroDB.db' (1ms).
+2023-06-10 17:30:27.162 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-06-10 17:30:27.165 +03:00 [DBG] No information found on request to perform content negotiation.
+2023-06-10 17:30:27.166 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-10 17:30:27.167 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-10 17:30:27.168 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-10 17:30:27.169 +03:00 [INF] Executing OkObjectResult, writing value of type 'backend.Model.UserDataDto'.
+2023-06-10 17:30:27.170 +03:00 [INF] Executed action backend.Controllers.UserController.GetUserDataAsync (backend) in 44.7321ms
+2023-06-10 17:30:27.172 +03:00 [INF] Executed endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:27.174 +03:00 [DBG] Connection id "0HMR9NSQDSEU8" completed keep alive response.
+2023-06-10 17:30:27.175 +03:00 [DBG] 'DbInfoContext' disposed.
+2023-06-10 17:30:27.176 +03:00 [DBG] Disposing connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:30:27.177 +03:00 [DBG] Disposed connection to database 'main' on server 'MyGymBroDB.db' (1ms).
+2023-06-10 17:30:27.178 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/user/user-data?id=4 - - - 200 137 application/json;+charset=utf-8 72.7803ms
+2023-06-10 17:30:28.985 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7220/user/user-data?id=5 - -
+2023-06-10 17:30:28.986 +03:00 [DBG] The request path  does not match the path filter
+2023-06-10 17:30:28.987 +03:00 [DBG] 1 candidate(s) found for the request path '/user/user-data'
+2023-06-10 17:30:28.988 +03:00 [DBG] Endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)' with route pattern 'user/user-data' is valid for the request path '/user/user-data'
+2023-06-10 17:30:28.989 +03:00 [DBG] Request matched endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:28.991 +03:00 [DBG] Successfully validated the token.
+2023-06-10 17:30:28.992 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-06-10 17:30:28.993 +03:00 [DBG] Authorization was successful.
+2023-06-10 17:30:28.993 +03:00 [INF] Executing endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:28.994 +03:00 [INF] Route matched with {action = "GetUserData", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[backend.Model.UserDataDto]] GetUserDataAsync(Int32) on controller backend.Controllers.UserController (backend).
+2023-06-10 17:30:28.997 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-06-10 17:30:28.998 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-06-10 17:30:28.999 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-06-10 17:30:29.002 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-06-10 17:30:29.003 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-06-10 17:30:29.004 +03:00 [DBG] Executing controller factory for controller backend.Controllers.UserController (backend)
+2023-06-10 17:30:29.006 +03:00 [DBG] Executed controller factory for controller backend.Controllers.UserController (backend)
+2023-06-10 17:30:29.007 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-06-10 17:30:29.008 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-06-10 17:30:29.009 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:29.011 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:29.013 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-06-10 17:30:29.014 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-06-10 17:30:29.015 +03:00 [DBG] Entity Framework Core 7.0.4 initialized 'DbInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.4' with options: None
+2023-06-10 17:30:29.017 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-06-10 17:30:29.019 +03:00 [DBG] Creating DbConnection.
+2023-06-10 17:30:29.020 +03:00 [DBG] Created DbConnection. (0ms).
+2023-06-10 17:30:29.021 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2023-06-10 17:30:29.022 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2023-06-10 17:30:29.024 +03:00 [DBG] Opening connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:30:29.025 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:29.026 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username", "u0"."Id", "u0"."Height", "u0"."TargetWeight", "u0"."UserId", "u0"."Weight"
+FROM "Users" AS "u"
+LEFT JOIN "UserDatas" AS "u0" ON "u"."UserId" = "u0"."UserId"
+WHERE "u"."UserId" = @__id_0
+LIMIT 1
+2023-06-10 17:30:29.029 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Email", "u"."Password", "u"."Username", "u0"."Id", "u0"."Height", "u0"."TargetWeight", "u0"."UserId", "u0"."Weight"
+FROM "Users" AS "u"
+LEFT JOIN "UserDatas" AS "u0" ON "u"."UserId" = "u0"."UserId"
+WHERE "u"."UserId" = @__id_0
+LIMIT 1
+2023-06-10 17:30:29.031 +03:00 [DBG] Context 'DbInfoContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:29.032 +03:00 [DBG] The navigation 'User.UserData' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:29.033 +03:00 [DBG] Context 'DbInfoContext' started tracking 'UserData' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-10 17:30:29.035 +03:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:29.037 +03:00 [DBG] A data reader for 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db' is being disposed after spending 5ms reading results.
+2023-06-10 17:30:29.038 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Aruncutean\Desktop\MyGymBro\backend\backend\MyGymBroDB.db'.
+2023-06-10 17:30:29.039 +03:00 [DBG] Closed connection to database 'main' on server 'MyGymBroDB.db' (1ms).
+2023-06-10 17:30:29.041 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-06-10 17:30:29.044 +03:00 [DBG] No information found on request to perform content negotiation.
+2023-06-10 17:30:29.045 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-10 17:30:29.046 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-10 17:30:29.047 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-10 17:30:29.048 +03:00 [INF] Executing OkObjectResult, writing value of type 'backend.Model.UserDataDto'.
+2023-06-10 17:30:29.049 +03:00 [INF] Executed action backend.Controllers.UserController.GetUserDataAsync (backend) in 45.1184ms
+2023-06-10 17:30:29.052 +03:00 [INF] Executed endpoint 'backend.Controllers.UserController.GetUserDataAsync (backend)'
+2023-06-10 17:30:29.053 +03:00 [DBG] Connection id "0HMR9NSQDSEU8" completed keep alive response.
+2023-06-10 17:30:29.054 +03:00 [DBG] 'DbInfoContext' disposed.
+2023-06-10 17:30:29.055 +03:00 [DBG] Disposing connection to database 'main' on server 'MyGymBroDB.db'.
+2023-06-10 17:30:29.056 +03:00 [DBG] Disposed connection to database 'main' on server 'MyGymBroDB.db' (1ms).
+2023-06-10 17:30:29.058 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7220/user/user-data?id=5 - - - 200 135 application/json;+charset=utf-8 72.6216ms

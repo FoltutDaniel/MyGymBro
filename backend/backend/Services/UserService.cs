@@ -162,24 +162,24 @@ namespace backend.Services
         public async Task<UserDataDto> GetUserDataById(int id)
         {
             User user = await userData.GetUserById(id);
-            UserData userDataReq = await userData.GetUserDataByFK(id);
+
             UserDataDto userD = new UserDataDto();
 
             if (user != null)
             {
-                if (userDataReq != null)
+                if (user.UserData != null)
                 {
                     userD = new UserDataDto()
                     {
-                        Id = userDataReq.Id,
+                        Id = user.UserData.Id,
                         User = new UserDto()
                         {
                             Id = user.UserId,
                             UserName = user.Username,
                             Email = user.Email,
                         },
-                        Weight = userDataReq.Weight,
-                        Height = userDataReq.Height,
+                        Weight = user.UserData.Weight,
+                        Height = user.UserData.Height,
                     };
                 }
                 else

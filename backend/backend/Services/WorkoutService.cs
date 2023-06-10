@@ -34,9 +34,13 @@ namespace backend.Services
                 });
                 _userData.UpdateUserData(userData);
                 List<Workout> workouts = await _workoutData.WorkoutDataTest(userData.Id);
-                workout.Id = workouts.Last().Id;
-                workout.date = workoutDto.date;
-                workout.WorkoutDuration = workoutDto.WorkoutDuration;
+                if (workouts.Count != 0)
+                {
+                    workout.Id = workouts.Last().Id;
+                    workout.date = workoutDto.date;
+                    workout.WorkoutDuration = workoutDto.WorkoutDuration;
+                }
+               
             }
             else
             {
@@ -227,5 +231,7 @@ namespace backend.Services
 
             };
         }
+
+
     }
 }

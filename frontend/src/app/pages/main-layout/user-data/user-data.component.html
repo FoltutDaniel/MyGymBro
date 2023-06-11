@@ -5,24 +5,24 @@
             <div style="display: flex; flex-direction: column; row-gap: 1rem;">
                 <div>
                     <span style="width: 5rem; display: inline-block">Weight: </span>
-                    <p-inputNumber></p-inputNumber>
+                    <p-inputNumber [(ngModel)]="weight"></p-inputNumber>
                 </div>
                 <div>
 
                     <span style="width: 5rem; display: inline-block">Height: </span>
-                    <p-inputNumber></p-inputNumber>
+                    <p-inputNumber [(ngModel)]="height"></p-inputNumber>
                 </div>
                 <div>
 
                     <span style="width: 5rem; display: inline-block">Target Weight: </span>
-                    <p-inputNumber></p-inputNumber>
+                    <p-inputNumber [(ngModel)]="targetWeight"></p-inputNumber>
                 </div>
                 <div>
 
                     <span style="width: 5rem; display: inline-block">Current BMI: </span>
                     <p-inputNumber [disabled]="true"></p-inputNumber>
                 </div>
-                <p-button label="Save your data"></p-button>
+                <p-button label="Save your data" (onClick)="updateUserData()"></p-button>
 
             </div>
         </div>

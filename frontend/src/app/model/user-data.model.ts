@@ -5,4 +5,5 @@ export class UserData{
     user: User;
     height: number;
     weight:number;
+    targetWeight: number;
 }

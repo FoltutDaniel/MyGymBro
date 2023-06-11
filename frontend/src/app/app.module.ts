@@ -16,6 +16,7 @@ import {DialogModule} from "primeng/dialog";
 import {DropdownModule} from "primeng/dropdown";
 import {InputNumberModule} from "primeng/inputnumber";
 import {FormsModule} from "@angular/forms";
+import {ChartModule} from "primeng/chart";
 
 @NgModule({
     declarations: [
@@ -30,7 +31,8 @@ import {FormsModule} from "@angular/forms";
         DialogModule,
         DropdownModule,
         InputNumberModule,
-        FormsModule
+        FormsModule,
+        ChartModule
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

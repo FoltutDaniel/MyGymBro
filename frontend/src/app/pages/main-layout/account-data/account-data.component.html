@@ -2,7 +2,20 @@
     <div class="col-12">
         <div class="card">
             <h4>Account Data Page</h4>
-            <p>This is your empty page template to start building beautiful applications.</p>
+            <h5>Change password</h5>
+            <div style="display: flex; flex-direction: column; row-gap: 1rem;">
+                <div>
+                    <span style="width: 12rem; display: inline-block">New password</span>
+
+                    <input type="password" pInputText [(ngModel)]="password"/>
+                </div>
+                <div>
+                    <span style="width: 12rem; display: inline-block">Confirm new password</span>
+
+                    <input type="password" pInputText [(ngModel)]="confirmPassword"/>
+                </div>
+                <p-button label="Change Password" (onClick)="changePassword()"></p-button>
+            </div>
         </div>
     </div>
 </div>

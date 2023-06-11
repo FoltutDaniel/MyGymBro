@@ -8,7 +8,7 @@ import {User} from "../model/user.model";
     providedIn: 'root'
 })
 export class UserService {
-    private url = 'http://localhost:8080/user';
+    private url = 'https://localhost:7220/user';
     constructor(private httpClient: HttpClient) {
     }
 
@@ -16,11 +16,11 @@ export class UserService {
         return this.httpClient.get<UserData>(this.url+"/user-data");
     }
 
-    updateUserData(userData: UserData):Observable<UserData>{
+    updateUserData(userData: any):Observable<UserData>{
         return this.httpClient.post<UserData>(this.url+"/user-data", userData);
     }
 
-    changePassword(user: User):Observable<any>{
+    changePassword(user: any):Observable<any>{
         return this.httpClient.post<any>(this.url+"/change-password", user);
     }
 

@@ -1,9 +1,20 @@
 <div class="grid">
     <div class="col-12">
-        <div class="card">
-            <h4>Account Data Page</h4>
+        <div style="font-size: 1.25rem;"class="card">
+            <h4>Account Data</h4>
+            <div style="margin-bottom: 1rem;">
+                <span style="width: 12rem; display: inline-block">Username: </span>
+
+                <input type="text" pInputText [disabled]="true" [(ngModel)]="username"/>
+            </div>
+            <div>
+                <span style="width: 12rem; display: inline-block">Email: </span>
+
+                <input type="text" pInputText [disabled]="true" [(ngModel)]="email"/>
+            </div>
             <h5>Change password</h5>
             <div style="display: flex; flex-direction: column; row-gap: 1rem;">
+
                 <div>
                     <span style="width: 12rem; display: inline-block">New password</span>
 

@@ -17,6 +17,8 @@ import {DropdownModule} from "primeng/dropdown";
 import {InputNumberModule} from "primeng/inputnumber";
 import {FormsModule} from "@angular/forms";
 import {ChartModule} from "primeng/chart";
+import {ToastModule} from "primeng/toast";
+import {MessageService} from "primeng/api";
 
 @NgModule({
     declarations: [
@@ -32,7 +34,8 @@ import {ChartModule} from "primeng/chart";
         DropdownModule,
         InputNumberModule,
         FormsModule,
-        ChartModule
+        ChartModule,
+        ToastModule
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

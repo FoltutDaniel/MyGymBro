@@ -5,6 +5,8 @@ import {UserService} from "../../../services/user.service";
     templateUrl: './account-data.component.html'
 })
 export class AccountDataComponent {
+    username: string = sessionStorage.getItem('username');
+    email: string = sessionStorage.getItem('email');
     password: string;
     confirmPassword: string;
     constructor(private userDataService: UserService) {

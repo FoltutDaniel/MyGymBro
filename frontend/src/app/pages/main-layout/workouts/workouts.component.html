@@ -1,6 +1,7 @@
 <div class="grid">
     <div class="col-12">
         <div class="card">
+            <p-toast></p-toast>
             <p-button label="Create workout" (onClick)="showDialog()" styleClass="workout-btn"></p-button>
             <p-dialog header="Workout" *ngIf="visible" [(visible)]="visible" [style]="{width: '35vw'}">
                 <div style="display:flex; flex-direction: column;">
@@ -15,13 +16,13 @@
             <div style="margin-bottom: 3rem;" *ngFor="let workout of workouts; let i = index;">
                 <h2>Workout {{i + 1}}</h2>
                 <h4>Date: {{workout.date}}</h4>
-                <h5>Workout duration: {{workout.workoutDuration}}</h5>
+                <h5>Workout duration: {{workout.workoutDuration}} hours</h5>
                 <h4 *ngIf="workout.exerciseWorkoutRels.length > 0">Workout exercises</h4>
                 <h4 *ngIf="workout.exerciseWorkoutRels.length < 1">This workout has no exercises added</h4>
 
                 <div style = "font-size: 20px; margin-bottom: 1rem; background-color: lightgray; padding: 1rem; border-radius: 15px" *ngFor="let exercise of workout.exerciseWorkoutRels">
                     <p>Exercise: {{exercise.exercise.name}}</p>
-                    <p>Weight: {{exercise.weight}}</p>
+                    <p>Weight: {{exercise.weight}} Kgs</p>
                     <p>Number of reps: {{exercise.numberOfReps}}</p>
                     <p>Number of sets: {{exercise.numberOfSets}}</p>
                 </div>

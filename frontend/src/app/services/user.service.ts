@@ -18,10 +18,10 @@ export class UserService {
         return this.httpClient.get<UserData>(this.url+"/user-data", options);
     }
 
-    updateUserData(userData: any):Observable<UserData>{
+    updateUserData(userData: any):Promise<UserData>{
         const options = sessionStorage.getItem('id') ?
             { params: new HttpParams().set('id',  userData.id) } : {};
-        return this.httpClient.post<UserData>(this.url+"/user-data", userData, options);
+        return this.httpClient.post<UserData>(this.url+"/user-data", userData, options).toPromise();
     }
 
     changePassword(user: any):Observable<any>{

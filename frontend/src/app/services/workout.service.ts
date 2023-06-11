@@ -18,8 +18,8 @@ export class WorkoutService {
         return this.httpClient.post<Workout>(this.url+'/start-workout/' + userId, workout).toPromise();
     }
 
-    addExerciseToWorkout(workoutExercise: any, workoutId: number): Observable<Workout>{
-        return this.httpClient.put<Workout>(this.url+'/add-exercise/' + workoutId, workoutExercise);
+    addExerciseToWorkout(workoutExercise: any, workoutId: number): Promise<Workout>{
+        return this.httpClient.put<Workout>(this.url+'/add-exercise/' + workoutId, workoutExercise).toPromise();
     }
 
     removeExerciseToWorkout(workoutExercise: WorkoutExercise, workoutId: number): Observable<Workout>{

@@ -11,8 +11,9 @@ export class AccountDataComponent {
     }
 
     changePassword(){
-        this.userDataService.changePassword({id: sessionStorage.getItem('id'),userName: sessionStorage.getItem('username'), password: this.password}).subscribe(() =>{
-            alert('Password was changed');
+        this.userDataService.changePassword({id: sessionStorage.getItem('id'),email: sessionStorage.getItem('email'), password: this.password}).subscribe(() =>{
+
         });
+        alert('Password was changed');
     }
 }

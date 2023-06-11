@@ -7,23 +7,28 @@ import {UserService} from "../../../services/user.service";
 export class UserDataComponent implements OnInit{
 
     userData;
-    weight;
-    height;
-    targetWeight;
+    weight = 0;
+    height = 0;
+    targetWeight = 0;
+    bmi = 0;
     constructor(private userDataService: UserService) {
     }
 
     ngOnInit(): void {
         this.userDataService.getUserData(Number(sessionStorage.getItem('id'))).subscribe(data =>{
-            console.log(data);
             this.userData = data;
+            this.calculateBmi();
         })
     }
 
     updateUserData(){
-        this.userDataService.updateUserData({id: sessionStorage.getItem('id'), weight: this.weight, height: this.height, targetWeight: this.targetWeight}).subscribe(data => {
+        this.userDataService.updateUserData({id: this.userData.id,user: {id: sessionStorage.getItem('id')}, weight: this.userData.weight, height: this.userData.height, targetWeight: this.userData.targetWeight}).subscribe(data => {
             console.log(data);
         })
+    }
+
+    calculateBmi(){
+        this.bmi = this.userData.weight / (this.userData.height * this.userData.height);
     }
 
 

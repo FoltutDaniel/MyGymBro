@@ -2,25 +2,28 @@
     <div class="col-12">
         <div class="card">
             <h4>User Data Page</h4>
-            <div style="display: flex; flex-direction: column; row-gap: 1rem;">
+            <div style="display: flex; flex-direction: column; row-gap: 1rem;" *ngIf="userData != null">
                 <div>
                     <span style="width: 5rem; display: inline-block">Weight: </span>
-                    <p-inputNumber [(ngModel)]="weight"></p-inputNumber>
+                    <p-inputNumber [(ngModel)]="userData.weight" mode='decimal'[maxFractionDigits]="2" [minFractionDigits]="2" (ngModelChange)="calculateBmi()"></p-inputNumber>
+                    <span style="width: 5rem; display: inline-block">in Kgs</span>
                 </div>
                 <div>
 
                     <span style="width: 5rem; display: inline-block">Height: </span>
-                    <p-inputNumber [(ngModel)]="height"></p-inputNumber>
+                    <p-inputNumber [(ngModel)]="userData.height" mode='decimal'[maxFractionDigits]="2" [minFractionDigits]="2" (ngModelChange)="calculateBmi()"></p-inputNumber>
+                    <span style="width: 5rem; display: inline-block">in m</span>
                 </div>
                 <div>
 
                     <span style="width: 5rem; display: inline-block">Target Weight: </span>
-                    <p-inputNumber [(ngModel)]="targetWeight"></p-inputNumber>
+                    <p-inputNumber [(ngModel)]="userData.targetWeight" mode='decimal'[maxFractionDigits]="2" [minFractionDigits]="2"></p-inputNumber>
+                    <span style="width: 5rem; display: inline-block">in Kgs</span>
                 </div>
                 <div>
 
                     <span style="width: 5rem; display: inline-block">Current BMI: </span>
-                    <p-inputNumber [disabled]="true"></p-inputNumber>
+                    <p-inputNumber [disabled]="true" [(ngModel)]="bmi"></p-inputNumber>
                 </div>
                 <p-button label="Save your data" (onClick)="updateUserData()"></p-button>
 

@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {UserData} from "../model/user-data.model";
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpParams} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {User} from "../model/user.model";
 
@@ -13,11 +13,15 @@ export class UserService {
     }
 
     getUserData(userId: number):Observable<UserData>{
-        return this.httpClient.get<UserData>(this.url+"/user-data");
+        const options = sessionStorage.getItem('id') ?
+            { params: new HttpParams().set('id',  sessionStorage.getItem('id')) } : {};
+        return this.httpClient.get<UserData>(this.url+"/user-data", options);
     }
 
     updateUserData(userData: any):Observable<UserData>{
-        return this.httpClient.post<UserData>(this.url+"/user-data", userData);
+        const options = sessionStorage.getItem('id') ?
+            { params: new HttpParams().set('id',  userData.id) } : {};
+        return this.httpClient.post<UserData>(this.url+"/user-data", userData, options);
     }
 
     changePassword(user: any):Observable<any>{

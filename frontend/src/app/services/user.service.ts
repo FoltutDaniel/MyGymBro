@@ -24,8 +24,8 @@ export class UserService {
         return this.httpClient.post<UserData>(this.url+"/user-data", userData, options).toPromise();
     }
 
-    changePassword(user: any):Observable<any>{
-        return this.httpClient.post<any>(this.url+"/change-password", user);
+    changePassword(user: any):Promise<any>{
+        return this.httpClient.post<any>(this.url+"/change-password", user).toPromise();
     }
 
 }

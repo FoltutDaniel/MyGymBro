@@ -17,9 +17,9 @@ export class ExercisesComponent implements OnInit {
     visible: boolean;
 
     workoutId;
-    weight;
-    sets;
-    reps;
+    weight = 0;
+    sets = 0;
+    reps = 0;
 
     constructor(private exercisesService: ExerciseService, private workoutService: WorkoutService, private messageService: MessageService) {
     }
@@ -44,6 +44,30 @@ export class ExercisesComponent implements OnInit {
     }
 
     addExercise(exerciseId) {
+        if (this.weight === null || this.weight <= 0) {
+            this.messageService.add({
+                severity: 'error',
+                summary: "Error",
+                detail: "You need to provide a valid value for weight!"
+            });
+            return;
+        }
+        if (this.sets === null || this.sets <= 0) {
+            this.messageService.add({
+                severity: 'error',
+                summary: "Error",
+                detail: "You need to provide a valid value for number of sets!"
+            });
+            return;
+        }
+        if (this.reps === null || this.reps <= 0) {
+            this.messageService.add({
+                severity: 'error',
+                summary: "Error",
+                detail: "You need to provide a valid value for reps!"
+            });
+            return;
+        }
         this.visible = false;
         this.workoutService.addExerciseToWorkout({
             exercise: {id: exerciseId},

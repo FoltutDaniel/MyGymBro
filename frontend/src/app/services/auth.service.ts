@@ -13,16 +13,10 @@ export class AuthService {
     }
 
     login(user: any): any{
-        return this.httpClient.post<any>(this.url + '/login', user).subscribe(data =>{
-            sessionStorage.setItem('username', data.user);
-            sessionStorage.setItem('email', data.email);
-            sessionStorage.setItem('token', 'Bearer ' + data.token);
-            sessionStorage.setItem('id', data.id);
-            this.router.navigateByUrl('');
-        });
+        return this.httpClient.post<any>(this.url + '/login', user).toPromise();
     }
 
-    register(user: any): Observable<any>{
-        return this.httpClient.post<any>(this.url + '/register', user);
+    register(user: any): Promise<any>{
+        return this.httpClient.post<any>(this.url + '/register', user).toPromise();
     }
 }

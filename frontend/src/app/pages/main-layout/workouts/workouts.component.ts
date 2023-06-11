@@ -12,7 +12,7 @@ import {MessageService} from "primeng/api";
 export class WorkoutsComponent implements OnInit {
 
     workouts: Workout[];
-    workoutDuration;
+    workoutDuration = 0;
     visible: boolean;
 
     constructor(private workoutService: WorkoutService, private messageService: MessageService) {
@@ -41,7 +41,14 @@ export class WorkoutsComponent implements OnInit {
 
     createWorkout() {
         this.visible = false;
-
+        if (this.workoutDuration === null || this.workoutDuration <= 0) {
+            this.messageService.add({
+                severity: 'error',
+                summary: "Error",
+                detail: "You need to provide a valid value for workout duration!"
+            });
+            return;
+        }
         this.workoutService.startWorkout({date: new Date(), workoutDuration: this.workoutDuration}).then(() => {
             this.messageService.add({severity: 'success', summary: "Success", detail: "Workout creation was successful!"});
             this.workoutDuration = null;

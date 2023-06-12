@@ -1,0 +1,88 @@
+[
+    {
+        "id": 1,
+        "workoutDuration": "12",
+        "date": "0001-01-01T00:00:00",
+        "exerciseWorkoutRels": [
+            {
+                "id": 16,
+                "exercise": {
+                    "id": 2,
+                    "category": "12",
+                    "name": "Test",
+                    "imageString": "33"
+                },
+                "numberOfSets": 2.0,
+                "numberOfReps": 2.0,
+                "weight": 10.0
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "workoutDuration": "12",
+        "date": "0001-01-01T00:00:00",
+        "exerciseWorkoutRels": [
+            {
+                "id": 11,
+                "exercise": {
+                    "id": 0,
+                    "category": null,
+                    "name": "Test1",
+                    "imageString": null
+                },
+                "numberOfSets": 2.0,
+                "numberOfReps": 2.0,
+                "weight": 10.0
+            },
+            {
+                "id": 12,
+                "exercise": {
+                    "id": 0,
+                    "category": null,
+                    "name": "Test2",
+                    "imageString": null
+                },
+                "numberOfSets": 2.0,
+                "numberOfReps": 2.0,
+                "weight": 10.0
+            },
+            {
+                "id": 13,
+                "exercise": {
+                    "id": 2,
+                    "category": "12",
+                    "name": "Test3",
+                    "imageString": "33"
+                },
+                "numberOfSets": 2.0,
+                "numberOfReps": 2.0,
+                "weight": 10.0
+            },
+            {
+                "id": 14,
+                "exercise": {
+                    "id": 2,
+                    "category": "12",
+                    "name": "Test4",
+                    "imageString": "33"
+                },
+                "numberOfSets": 2.0,
+                "numberOfReps": 2.0,
+                "weight": 10.0
+            },
+            {
+                "id": 15,
+                "exercise": {
+                    "id": 2,
+                    "category": "12",
+                    "name": "Test5",
+                    "imageString": "33"
+                },
+                "numberOfSets": 2.0,
+                "numberOfReps": 2.0,
+                "weight": 10.0
+            }
+        ]
+    }
+]

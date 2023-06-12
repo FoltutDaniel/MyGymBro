@@ -4,5 +4,9 @@
     "lib": ["es5", "dom"],
     "types": ["cypress", "node"]
   },
-  "include": ["**/*.ts", "cypress/support/commands.ts"]
+  "include": ["**/*.ts", "cypress/support/commands.ts", "**/**/*.json"],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  }
 }

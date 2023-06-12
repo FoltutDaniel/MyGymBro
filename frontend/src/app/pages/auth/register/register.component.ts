@@ -33,7 +33,7 @@ export class RegisterComponent {
             this.messageService.add({
                 severity: 'error',
                 summary: "Error",
-                detail: "Username must have 3 ore more letters!"
+                detail: "Username must have 3 or more letters!"
             });
             return;
         }

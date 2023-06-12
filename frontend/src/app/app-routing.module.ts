@@ -32,7 +32,7 @@ import {AuthGuard} from "./pages/auth/guards/auth.guard";
                     {path: 'user-data', component: UserDataComponent}
                 ]
             },
-            {path: '**', redirectTo: '/landing'},
+            {path: '**', redirectTo: '/notfound'},
         ], {scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload'})
     ],
     exports: [RouterModule]

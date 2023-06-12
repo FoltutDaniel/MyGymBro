@@ -1,0 +1,8 @@
+[
+    {
+        "id": 1,
+        "category": "Biceps",
+        "name": "Biceps Curls",
+        "imageString": "../../../../assets/app/curl.jpg"
+    }
+]

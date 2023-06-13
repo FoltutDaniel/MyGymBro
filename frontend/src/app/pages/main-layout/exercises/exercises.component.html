@@ -2,42 +2,44 @@
     <div class="col-12">
         <div class="card">
             <p-toast></p-toast>
-            <div
-                style="background-color: darkgrey; padding: 2rem; border-radius: 15px; width: 85%; margin-bottom: 2rem;"
-                *ngFor="let exercise of exercises; let i = index">
-                <h2>{{exercise.name}}</h2>
-                <h5>Category: {{exercise.category}}</h5>
-                <img style="width:50%;" src="{{exercise.imageString}}" alt="{{exercise.name}}">
-                <p-button styleClass="add-workout" label="Add to workout" (click)="showDialog()"></p-button>
-                <p-dialog header="Add exercise" *ngIf="visible" [(visible)]="visible" [style]="{width: '35vw'}">
-                    <div style="display:flex; flex-direction: column;">
-                        <div class="dialog-element">
-                            <span style="width: 5rem; display: inline-block">Workout: </span>
-                            <p-dropdown
-                                [options]="workouts"
-                                [(ngModel)]="workoutId"
-                            ></p-dropdown>
-                        </div>
-                        <div class="dialog-element">
+            <ng-container *ngFor="let exercise of exercises; let i = index">
+                <div
+                    style="background-color: darkgrey; padding: 2rem; border-radius: 15px; width: 85%; margin-bottom: 2rem;"
+                >
+                    <h2>{{exercise.name}}</h2>
+                    <h5>Category: {{exercise.category}}</h5>
+                    <img style="width:50%;" src="{{exercise.imageString}}" alt="{{exercise.name}}">
+                    <p-button styleClass="add-workout" label="Add to workout" (click)="showDialog(exercise.id)"></p-button>
+                    <p-dialog header="Add exercise" *ngIf="visible" [(visible)]="visible" [style]="{width: '35vw'}">
+                        <div style="display:flex; flex-direction: column;">
+                            <div class="dialog-element">
+                                <span style="width: 5rem; display: inline-block">Workout: </span>
+                                <p-dropdown
+                                    [options]="workouts"
+                                    [(ngModel)]="workoutId"
+                                ></p-dropdown>
+                            </div>
+                            <div class="dialog-element">
 
-                            <span style="width: 5rem; display: inline-block">Weight: </span>
-                            <p-inputNumber [(ngModel)]="weight"></p-inputNumber>
-                            <span style="margin-left: 1rem; width: 5rem; display: inline-block"> in Kgs </span>
-                        </div>
-                        <div class="dialog-element">
-                            <span style="width: 5rem; display: inline-block">Reps: </span>
-                            <p-inputNumber [(ngModel)]="reps"></p-inputNumber>
-                        </div>
-                        <div class="dialog-element">
-                            <span style="width: 5rem; display: inline-block">Sets: </span>
-                            <p-inputNumber [(ngModel)]="sets"></p-inputNumber>
-                        </div>
+                                <span style="width: 5rem; display: inline-block">Weight: </span>
+                                <p-inputNumber [(ngModel)]="weight"></p-inputNumber>
+                                <span style="margin-left: 1rem; width: 5rem; display: inline-block"> in Kgs </span>
+                            </div>
+                            <div class="dialog-element">
+                                <span style="width: 5rem; display: inline-block">Reps: </span>
+                                <p-inputNumber [(ngModel)]="reps"></p-inputNumber>
+                            </div>
+                            <div class="dialog-element">
+                                <span style="width: 5rem; display: inline-block">Sets: </span>
+                                <p-inputNumber [(ngModel)]="sets"></p-inputNumber>
+                            </div>
 
-                        <p-button label="Add exercise" (onClick)="addExercise(exercise.id)"></p-button>
-                    </div>
-                </p-dialog>
+                            <p-button label="Add exercise" (onClick)="addExercise()"></p-button>
+                        </div>
+                    </p-dialog>
 
-            </div>
+                </div>
+            </ng-container>
         </div>
     </div>
 </div>

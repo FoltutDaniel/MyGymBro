@@ -12,11 +12,12 @@ import {MessageService} from "primeng/api";
     providers: [MessageService]
 })
 export class ExercisesComponent implements OnInit {
-    exercises: Exercise[];
+    exercises: Exercise[] = [];
     workouts: any[] = [];
     visible: boolean;
 
     workoutId;
+    exId = null;
     weight = 0;
     sets = 0;
     reps = 0;
@@ -39,11 +40,12 @@ export class ExercisesComponent implements OnInit {
         })
     }
 
-    showDialog() {
+    showDialog(id) {
         this.visible = true;
+        this.exId = id;
     }
 
-    addExercise(exerciseId) {
+    addExercise() {
         if (this.weight === null || this.weight <= 0) {
             this.messageService.add({
                 severity: 'error',
@@ -70,7 +72,7 @@ export class ExercisesComponent implements OnInit {
         }
         this.visible = false;
         this.workoutService.addExerciseToWorkout({
-            exercise: {id: exerciseId},
+            exercise: {id: this.exId},
             numberOfSets: this.sets,
             numberOfReps: this.reps,
             weight: this.weight
@@ -82,6 +84,11 @@ export class ExercisesComponent implements OnInit {
                 summary: "Error",
                 detail: "There was a problem with adding the exercise to the workout!"
             });
+        }).finally(() =>{
+            this.exId = null;
+            this.weight = 0;
+            this.sets = 0;
+            this.reps = 0;
         });
     }
 

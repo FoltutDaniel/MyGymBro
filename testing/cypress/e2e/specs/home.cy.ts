@@ -12,7 +12,7 @@ describe('Home Page test scenarios', () => {
         LoginPage.login('test@test12.com','test123')
     })
 
-    it('Verify application elements', () => {
+    it('Verify layout page', () => {
         HomePage.verifyDefaultPage()
     });
 

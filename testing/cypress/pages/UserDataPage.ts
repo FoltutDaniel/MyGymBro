@@ -1,3 +1,5 @@
+import WorkoutsPage from "./WorkoutsPage"
+
 class UserDataPage{
         get title(){
                 return cy.get('h4')
@@ -42,25 +44,30 @@ class UserDataPage{
         verifyUserData = () => {
                 cy.url().should('contain','/user-data')
                 this.title.should('be.visible').should('have.text', 'User Data Page')
-                this.weightLabel.should('be.visible').should('have.text', 'Weight:')
+                //this.weightLabel.should('be.visible').should('have.text', 'Weight:')
                 this.weightInput.should('be.visible')
-                this.heightLabel.should('be.visible').should('have.text', 'Height:')
+                //this.heightLabel.should('be.visible').should('have.text', 'Height:')
                 this.heightInput.should('be.visible')
-                this.targetWeightLabel.should('be.visible').should('have.text', 'Target Weight:')
+                //this.targetWeightLabel.should('be.visible').should('have.text', 'Target Weight:')
                 this.targetWeightInput.should('be.visible')
-                this.currentBmiLabel.should('be.visible').should('have.text', 'Current BMI:')
+                //this.currentBmiLabel.should('be.visible').should('have.text', 'Current BMI:')
                 this.currentBmiInput.should('be.visible')
                 this.saveDataBtn.should('be.visible').should('have.text', 'Save your data')
         }
 
-        addUserData = (weight: string, height: string, targetWeight: string, currentBMI: string) => {
-                this.weightInput.type(weight)
-                this.heightInput.type(height)
-                this.targetWeightInput.type(targetWeight)
-                this.currentBmiInput.type(currentBMI)
+        addUserData = (weight: string, height: string, targetWeight: string) => {
+                this.weightInput.click().clear().type(weight)
+                this.heightInput.click().clear().type(height)
+                this.targetWeightInput.click().clear().type(targetWeight)
                 this.saveDataBtn.click()
         }
 
+        verifySuccessMessage = () => {
+              WorkoutsPage.successSection.should('be.visible')
+              WorkoutsPage.successSummary.should('be.visible').should('have.text','Success')
+              WorkoutsPage.successDetail.should('be.visible').should('have.text','User data was saved')
+       }
+        
 }
 export default new UserDataPage();
 

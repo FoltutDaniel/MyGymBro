@@ -1,3 +1,5 @@
+import LoginPage from "./LoginPage"
+
 class AccountDataPage{
         get title(){
                 return cy.get('h4')
@@ -19,11 +21,17 @@ class AccountDataPage{
                 cy.url().should('contain','/account-data')
         }
 
-        changePassword = (newPass: string) => {
+        changePassword = (newPass: string, confirmPass: string) => {
                 this.newPassword.click().type(newPass)
-                this.confirmPassword.click().type(newPass)
+                this.confirmPassword.click().type(confirmPass)
                 this.changePass.click()
         }
+
+        verifyErrorMessage = () => {
+              LoginPage.errorSection.should('be.visible')
+              LoginPage.errorSummary.should('be.visible').should('have.text','Error')
+              LoginPage.errorDetail.should('be.visible').should('have.text','Passwords do not match!')
+       }
 
 }
 export default new AccountDataPage();

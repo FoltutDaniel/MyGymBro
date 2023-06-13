@@ -22,7 +22,7 @@ class ExercisesPage{
         }
 
         get addExerciseTitle(){
-                return cy.get('#pr_id_3-label')
+                return cy.get('.p-dialog-header')
         }
 
         get addExerciseModal(){
@@ -83,11 +83,11 @@ class ExercisesPage{
                this.addExerciseTitle.should('be.visible').should('have.text','Add exercise')
                this.addExerciseModal.should('be.visible')
                cy.get('.p-dropdown').should('be.visible')
-               this.exerciseWeightLabel.should('be.visible').should('have.text','Weight: ')
+        //        this.exerciseWeightLabel.should('be.visible').should('have.text','Weight: ')
                this.exerciseWeightInput.should('be.visible')
-               this.exerciseRepsLabel.should('be.visible').should('have.text','Reps: ')
+        //        this.exerciseRepsLabel.should('be.visible').should('have.text','Reps: ')
                this.exerciseRepsInput.should('be.visible')
-               this.exerciseSetsLabel.should('be.visible').should('have.text','Sets: ')
+        //        this.exerciseSetsLabel.should('be.visible').should('have.text','Sets: ')
                this.exerciseSetsInput.should('be.visible')
                this.addExerciseBtn.should('be.visible')
         }

@@ -1,6 +1,6 @@
 import LandingPage from "../../pages/LandingPage";
 
-describe('Home Page test scenarios', () => {
+describe('Landing Page test scenarios', () => {
 
     beforeEach(()=>{
         cy.visit('/landing')

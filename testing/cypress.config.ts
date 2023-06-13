@@ -8,7 +8,7 @@ module.exports = defineConfig({
     },
     viewportHeight: 940,
     viewportWidth: 1350,
-    end: {
+    env: {
       URL: "http://localhost:4200/",
     },
   },

@@ -10,6 +10,7 @@ describe('Login test scenarios', () => {
     const incorrectEmail = 'test@test.com'
     const incorrectPass = 'wrongpass'
     const newPass = 'newpassword'
+    const wrongPass = 'newpass'
 
     beforeEach(()=>{
         cy.visit(`${url}#/landing`)
@@ -62,7 +63,7 @@ describe('Login test scenarios', () => {
         cy.url().should('not.contain','/login')
         HomePage.profileBtn.click()
         HomePage.accountDataBtn.click()
-        AccountDataPage.changePassword(newPass)
+        AccountDataPage.changePassword(newPass, newPass)
         HomePage.profileBtn.click()
         HomePage.signOutBtn.click()
         LandingPage.loginBtn.click()
@@ -70,8 +71,18 @@ describe('Login test scenarios', () => {
         cy.url().should('not.contain','/login')
         HomePage.profileBtn.click()
         HomePage.accountDataBtn.click()
-        AccountDataPage.changePassword(pass)
+        AccountDataPage.changePassword(pass, pass)
         HomePage.profileBtn.click()
+    })
+
+    it('Change password - passwords do not match', () => {
+        LandingPage.loginBtn.click()
+        LoginPage.login(email, pass)
+        cy.url().should('not.contain','/login')
+        HomePage.profileBtn.click()
+        HomePage.accountDataBtn.click()
+        AccountDataPage.changePassword(newPass, wrongPass)
+        AccountDataPage.verifyErrorMessage()
     })
 
 })

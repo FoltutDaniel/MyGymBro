@@ -35,7 +35,7 @@ describe('Exercises page verification', () => {
 
     it('Add a exercise to workout', () => {
         ExercisesPage.addToWorkoutBtn.eq(0).click()
-        cy.wait(8000)
+        cy.wait(4000)
         ExercisesPage.addExercise('15','12','4')
         HomePage.workoutsBtn.click()
         WorkoutsPage.verifyLastWorkout(2,`Test`,15,12,4)
